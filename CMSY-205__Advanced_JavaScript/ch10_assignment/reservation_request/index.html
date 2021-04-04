@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Reservation Request</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+
+    <!-- Page Title -->
+    <h1>Reservation Request</h1>
+
+    <!-- Start Reservation Form Section -->
+    <form action="response.html" method="get" name="reservation_form" id="reservation_form">
+
+        <!-- Start Fieldset for General Information -->
+        <fieldset>
+
+            <!-- Start Fieldset Title -->
+            <legend>General Information</legend>
+
+            <!-- Start Arrival Date Input -->
+            <label for="arrival_date">Arrival date:</label>
+            <input type="text" name="arrival_date" id="arrival_date" autofocus><br>
+            <!-- End Arrival Date Input -->
+
+            <!-- Start Input for Number of Nights -->
+            <label for="nights">Nights:</label>
+            <input type="text" name="nights" id="nights">
+            <!-- End Inpur for Number of Nights -->
+
+            <br>
+
+            <!-- Start Number of Adults Selection Option -->
+            <label>Adults:</label>
+            <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <!-- End Number of Adults Selection Option -->
+
+            <br>
+
+            <!-- Start Number of Children Select Option -->
+            <label>Children:</label>
+            <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <!-- End Number of Children Select Option -->
+
+            <br>
+
+        </fieldset>
+        <!-- End Fieldset for General Information -->
+
+        <!-- Start Fieldset for Preferences -->
+        <fieldset>
+
+            <!-- Fieldset Title -->
+            <legend>Preferences</legend>
+
+            <!-- Room Type Radio Button -->
+            <label>Room type:</label>
+            <input type="radio" name="room" id="standard" class="left" checked>Standard&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="room" id="business" class="left">Business&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="room" id="suite" class="left last">Suite<br>
+
+            <!-- Bed Type Radio Button -->
+            <label>Bed type:</label>
+            <input type="radio" name="bed" id="king" class="left" checked>King&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="bed" id="double" class="left last">Double Double<br>
+
+            <!-- Smoking Checkbox -->
+            <input type="checkbox" name="smoking" id="smoking">Smoking<br>
+
+        </fieldset>
+        <!-- End Fieldset for Preferences -->
+
+        <!-- Start Fieldset for Contact Information -->
+        <fieldset>
+
+            <!-- Fieldset Title -->
+            <legend>Contact Information</legend>
+
+            <!-- Start Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <!-- End Name Input -->
+
+            <!-- Start Email Input -->
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <br>
+            <!-- End Email Input -->
+
+            <!-- Start Phone Number Input -->
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" placeholder="999-999-9999">
+            <br>
+            <!-- End Phone Number Input -->
+
+        </fieldset>
+        <!-- End Fieldset for Contact Information -->
+
+        <!-- Submit Request Button -->
+        <input type="submit" id="submit" value="Submit Request">
+        <br>
+
+    </form>
+    <!-- End Reservation Form Section -->
+
+    <!-- jQuery1.8.3 -->
+    <script type="text/javascript" src="js/jquery183.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
