@@ -1,0 +1,88 @@
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+}
+
+.navbar-nav li a {
+  color: #FFFFFF;
+}
+
+.btn.btn-secondary.btn-lg.btn-block {
+  background-color: #404040;
+}
+.btn.btn-link {
+  color: #000;
+}
+.card-header {
+  background-color: #404040;
+  border-radius: 0;
+  color: #FFFFFF;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.card-body {
+  border: 1px solid #404040;
+  border-radius: 0;
+}
+
+
+
+.card.card-body.card-login {
+  margin: 4em;
+}
+
+.container-about {
+  padding: 4em;
+}
+
+.container-reasons {
+  padding: 4em;
+}
+
+.col-sm-6 {
+  padding: 1em;
+}
+
+.col-sm-6 p {
+  text-align: justify;
+}
+
+.custom-select {
+  border: 1px solid #404040;
+}
+
+.form-control {
+  border: 1px solid #404040;
+}
+
+p {
+  text-align: justify;
+}
+
+.jumbotron {
+  height: 30em;
+  opacity: 0.9; 
+  text-align: center;
+}
+
+.forgot-links {
+  text-align: center; 
+}
+
+img {
+  text-align: center; 
+  width: 100%;
+  height: 100%;
+}
+
+.forgot-password {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center; 
+}
