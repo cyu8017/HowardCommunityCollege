@@ -6,31 +6,359 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Team Treehouse Techdegree">
+    <meta property="og:description" content="Team Treehouse Techdegree Portfolio Showcase.">
+    <meta property="og:image" content="https://cyu8017.github.io/TeamTreehouse_Projects/src/images/team_tree_house.png">
+    <meta property="og:url" content="https://cyu8017.github.io/TeamTreehouse_Projects/">
 
-    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/bootstrap/bootstrap.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="./src/css/fonts/source_sans_pro.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./src/images/favicon.webp" />
+
+    <!-- Title -->
+    <title>HCC Portfolio</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container">
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+            <a class="navbar-brand" href="./index.html">HCC Portfolio</a>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+            <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cmsy-168">CMSY-168</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CMSY-169</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CMSY-172</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CMSY-203</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CMSY-205</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Get In Touch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="col-lg-6 col-md-12 col-sm-12 overlay-column">
+                    <div class="text-overlay">
+                        <h1>Welcome!</h1>
+                        <p>This site showcases the programming courses I have completed for the Associates Degree in Web
+                            Development at Howard Community College.</p>
+                        <p>All code repositories are on GitHub and are constantly refactored.</p>
+                        <p>The courses are: </p>
+                        <ul>
+                            <li>CMSY-168: Developing for the Web</li>
+                            <li>CMSY-169: Mobile Design &amp; Development Principles</li>
+                            <li>CMSY-172: Introduction to Programming with JavaScript</li>
+                            <li>CMSY-203: Introduction to PHP</li>
+                            <li>CMSY-205: Advanced JavaScript</li>
+                        </ul>
+                        <p>If you find an issue or have a suggestion, please submit a GitHub issue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <section class="cmsy-168" id="cmsy-168">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                        <h2 class="section-title">CMSY-168: Developing For The Web</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <button class="btn btn-dark btn-block"><i class="fab fa-github"></i> &nbsp; View on
+                            GitHub</button>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p>This course presents in-depth coverage of HTML and cascading style sheets (CSS). Students
+                            will learn the core technologies of front-end development - HTML, CSS, and document object
+                            model (DOM). The course also examines recommended practices for creating accessible
+                            websites, semantic markup, and emerging technologies. A conceptual overview, design issues,
+                            and practical development issues are interwoven. Familiarity and experience with the Windows
+                            operating system, the creation of folders (directories) and files, and the World Wide Web is
+                            assumed.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <span class="badge badge-primary">HTML5</span>
+                        <span class="badge badge-primary">CSS3</span>
+                        <span class="badge badge-primary">JavaScript ES6+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="cmsy-169" id="cmsy-169">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                        <h2 class="section-title">CMSY-169: Mobile Design &amp; Development Principles</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <button class="btn btn-dark btn-block"><i class="fab fa-github"></i> &nbsp; View on
+                            GitHub</button>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p>The principles and attributes of mobile website and application development are unlike any
+                            other approaches on the market and are considerably different from its desktop predecessor.
+                            This course provides an overview of the basic principles and theory behind mobile
+                            development. Key topics covered will include design functionality, design marketing, phone
+                            platforms, and mobile operating systems. Students will obtain a firm understanding of how to
+                            create a development strategy, address the mobile context, how to decide which of the
+                            multiple mobile development types is best for a customer, and how to create a user
+                            experience for it. Students will utilize these core principles to design and implement both
+                            a mobile website and basic mobile application.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <span class="badge badge-primary">HTML5</span>
+                        <span class="badge badge-primary">CSS3</span>
+                        <span class="badge badge-primary">JavaScript ES6+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="cmsy-172" id="cmsy-172">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                        <h2 class="section-title">CMSY-172: Introduction to Programming with JavaScript</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <button class="btn btn-dark btn-block"><i class="fab fa-github"></i> &nbsp; View on
+                            GitHub</button>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p>This course is an introduction to computer programming using JavaScript programming language.
+                            It will present the beginning to intermediate topics necessary to create, design, write,
+                            test, debug, and document programs for execution in a web browser. This course is designed
+                            to teach students how to add interactive capabilities to websites and web applications, how
+                            to develop programs utilizing the software development life cycle methodology, and the
+                            foundational skills needed for learning other programming languages. It is assumed that
+                            students are familiar with HTML and file management.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <span class="badge badge-primary">HTML5</span>
+                        <span class="badge badge-primary">CSS3</span>
+                        <span class="badge badge-primary">JavaScript ES6+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="cmsy-172" id="cmsy-172">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                        <h2 class="section-title">CMSY-203: Introduction to PHP</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <button class="btn btn-dark btn-block"><i class="fab fa-github"></i> &nbsp; View on
+                            GitHub</button>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p>PHP is an open source server-side scripting language used to create dynamic, data-driven
+                            websites for such applications as web-based content management and display systems. It
+                            performs many of the same functions as ASP and ColdFusion. In this course students will
+                            learn how to use several features of this scripting language. Students will write scripting
+                            code within the class and in assignments outside of class.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <span class="badge badge-primary">HTML5</span>
+                        <span class="badge badge-primary">CSS3</span>
+                        <span class="badge badge-primary">JavaScript ES6+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <section class="cmsy-205" id="cmsy-205">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                        <h2 class="section-title">CMSY-205: Advanced JavaScript</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <button class="btn btn-dark btn-block"><i class="fab fa-github"></i> &nbsp; View on
+                            GitHub</button>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p>This course provides comprehensive instruction in JavaScript. It will present both
+                            intermediate and advanced topics needed to create, design, write, test, debug, and document
+                            programs to run on client machines with JavaScript.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <span class="badge badge-primary">HTML5</span>
+                        <span class="badge badge-primary">CSS3</span>
+                        <span class="badge badge-primary">JavaScript ES6+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Copyright &copy; 2021 - https://cyu8017.github.io/TeamTreehouse_Projects</p>
+                        <p>Course Names and Course Descriptions copied from Team Treehouse .com.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="https://linkedin.com/in/cyu8017"
+                                target="_blank">https://linkedin.com/in/cyu8017</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><i class="fab fa-github-alt fa-1x"></i> GitHub:</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="https://github.com/cyu8017" target="_blank">https://github.com/cyu8017</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><i class="fas fa-envelope-open-text"></i> Email:</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="mailto:cyu8017@gmail.com" target="_blank">cyu8017@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><i class="fas fa-phone-alt"></i> Text/Call Me:</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <p>(443) 995 - 4851</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark btn-block" data-dismiss="modal">Exit This Window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="./src/js/fontawesome_5.14.0/fontawesome5.14.0.min.js"></script>
+
+    <script src="./src/js/jquery/jquery-3.6.0.min.js"></script>
+
+    <script src="./src/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Close Navbar Dropdown -->
+    <script>
+        $("#navbarDropdown").dropdown('hide');
+    </script>
+
 </body>
 
 </html>
