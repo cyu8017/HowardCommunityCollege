@@ -96,8 +96,9 @@ body {
 }
 
 /* Badge */
-.badge-success {
-    background-color: #004d00;
+.badge-primary {
+    background-color: #005c99;
+    border-radius: 0;
     color: #ffffff;
     padding: 0.4rem;
 }
