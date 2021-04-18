@@ -91,15 +91,6 @@ body {
     background-color: #4d4d4d;
 }
 
-/* Text-Overlay */
-.text-overlay {
-    background-color: #000000;
-    color: #ffffff;
-    border-radius: 0;
-    opacity: 0.8;
-    padding: 3rem;
-}
-
 /* Badge */
 .badge-primary {
     background-color: #005c99;
@@ -151,4 +142,46 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: left;
+}
+
+/* Text-Overlay */
+.text-overlay {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+    opacity: 0.8;
+    padding: 3rem;
+}
+
+/*** Media Queries ***/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Action Link Section */
+    .action-link-section {
+        text-align: left;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    p {
+        text-align: justify;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    p {
+        text-align: justify;
+    }
+
+    /* Action Link Section */
+    .action-link-section {
+        padding-left: 5rem;
+    }
 }
