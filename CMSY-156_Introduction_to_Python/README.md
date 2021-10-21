@@ -1,0 +1,3 @@
+# CMSY 156 Introduction to Python
+
+This course introduces students to computer programming using Python. Python is a new computer programming language that is widely used in industry, scientific research, computer forensics, scripting, game programming, and web applications. Students will solve programming problems using procedural programming constructs such as loops, branching structures, and functions. Students will write programs tha are testable and maintainable using good programming style, naming conventions, and comments.
