@@ -27,7 +27,7 @@ const init = () => {
     // Use the blurImage eventhandler function for the mouseout event.
     mapImage.onmouseout = blurImage;  
 
-} // End init()
+}; // End init()
 
 /* 
  * Function Name: clearImage()
@@ -43,7 +43,7 @@ const clearImage = () => {
     // Use the map.jpg image for the image source.
     image.src = "images/map.jpg";
 
-} // End clearImage()
+}; // End clearImage()
 
 /* 
  * Function Name: blurImage()
@@ -58,7 +58,7 @@ const blurImage = () => {
     // Use the mapblur.jpg image for the image source.
     image.src = "images/mapblur.jpg";
     
-} // End blurImage()
+}; // End blurImage()
 
 // Set the window onload event to use the init function handler.
 window.onload = init;

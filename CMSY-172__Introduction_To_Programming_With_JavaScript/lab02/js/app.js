@@ -44,7 +44,6 @@ if (isNaN(numToCheck)) {
     alert("Error: Your emtry is not an integer.");
 } else {
     let result = isOdd(numToCheck);
-
     result === true ? document.write("Your entry of " + numToCheck + " is odd.")
         : document.write("Your entry of " + numToCheck + " is even.");
 }

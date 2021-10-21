@@ -39,7 +39,7 @@ const processForm = () => {
     output.innerHTML = firstName + " " + lastName + "<br><br>";
     output.innerHTML += email;
     
-} // End processForm()
+}; // End processForm()
 
 /* 
  * Function Name: init()

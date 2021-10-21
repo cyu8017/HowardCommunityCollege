@@ -30,7 +30,6 @@ const squareIt = squareMe => squareMe * squareMe;
 
 const arrDisplay = (e1, index, arr) => {
     const lastIndex = arr.length - 1;
-
     index !== lastIndex ? document.write(e1 + ", ")
         : document.write(e1 + "<br><br>");
 }
