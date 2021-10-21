@@ -16,14 +16,10 @@
  * -> quotes.
  */
 $(document).ready(() => {
-
 	$('span.pq').each(() => {
 		const quote = $(this).clone();
-		
 		quote.removeClass('span');
 		quote.addClass('pulledquote');
-
 		$(this).before(quote)
 	});
-
 }); // End ();

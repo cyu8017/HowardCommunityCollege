@@ -7,8 +7,11 @@
  * -> Homework Assignment - Chapter 10 Problem 1: Form Validation
  * -> Use JavaScript to validate a reservation request form.
  */
-$(document).ready(() => {
 
+// Turn on strict mode.
+"use strict";
+
+$(document).ready(() => {
     const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
 
     // add the span element after each text box.
@@ -78,7 +81,5 @@ $(document).ready(() => {
         if (isValid == false) {
             event.preventDefault();
         }
-
     });
-
 }); // End ()

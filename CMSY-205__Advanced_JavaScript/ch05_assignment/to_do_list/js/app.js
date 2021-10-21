@@ -28,26 +28,21 @@ const $ = id => document.getElementById(id);
  * -> Add the task to the task list array.
  */
 const addTask = () => {
-
     // Perform validation of adding a task to the array.
     if ($("new_task") == " ") {
         alert("Please enter a task.");
     } else {
-        var newTask = $("new_task").value;
-        var TaskList = $("task_list");
-
+        let newTask = $("new_task").value;
+        let TaskList = $("task_list");
         TaskList.innerHTML = "";
         taskList.push(newTask);
-
-        for (var theList in taskList) {
+        for (let theList in taskList) {
             TaskList.innerHTML += taskList[theList] + "\n";
             $("new_task").value = "";
         }
-
         $("new_task").focus();
     }
-
-} // End addTask()
+}; // End addTask()
 
 /*
  * Function Name: showNextTask()
@@ -55,19 +50,17 @@ const addTask = () => {
  * -> Display the first item in the array.
  */
 const showNextTask = () => {
-
     // When the array is empty, display an empty textbox and alert message
     if (taskList == "") {
         $("next_task").value = "";
         alert("No task remaining.");
     } else {
-        var nextTask = $("next_task");
-        var nextTaskString = taskList.shift();
+        let nextTask = $("next_task");
+        let nextTaskString = taskList.shift();
         $("next_task").value = nextTaskString;
         $("task_list").innerHTML = $("task_list").innerHTML.replace(nextTaskString + "\n", "");
     }
-
-} // End showNextTask()
+}; // End showNextTask()
 
 /* 
  * Document Window onload.
@@ -76,4 +69,4 @@ const showNextTask = () => {
 window.onload = () => {
     $("add_task").onclick = addTask;
     $("show_next_task").onclick = showNextTask;
-} // End Window onload.
+}; // End Window onload.

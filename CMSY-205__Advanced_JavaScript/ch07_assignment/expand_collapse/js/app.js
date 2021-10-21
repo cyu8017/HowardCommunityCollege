@@ -18,7 +18,6 @@
 $(document).ready(() => {
     $("#jdom a").click(() => {
         $(this).prev("div").toggle();
-
         $(this).prev("div").is(":visible")
             ? $(this).text("Show less")
             : $(this).text("Show more");

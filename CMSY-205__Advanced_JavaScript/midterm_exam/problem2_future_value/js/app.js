@@ -1,6 +1,6 @@
+"use strict";
+
 const $ = (id) => document.getElementById(id);
-
-
 const investmentError = document.getElementById("investment_error"); 
 const rateError = document.getElementById("rate_error");
 const yearsError = document.getElementById("years_error");
@@ -50,4 +50,4 @@ const clear = () => $("rate").value = "";
 window.onload = () => {
     $("calculate").onclick = calculateClick;
     $("investment").focus();
-}
+};

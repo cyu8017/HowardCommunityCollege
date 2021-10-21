@@ -1,3 +1,5 @@
+"use strict";
+
 const names = ["Ben", "Joel", "Judy", "Anne"];
 const scores = [88, 98, 77, 88];
 const textDisplay;
@@ -5,7 +7,6 @@ const textDisplay;
 const $ = (id) => document.getElementById(id);
 
 const addElement = () => {
-
 	// get user entries
 	let name = $("name").value;
 	let score = parseInt($("score").value);
@@ -19,32 +20,25 @@ const addElement = () => {
 		$("name").value = "";
 		$("score").value = "";
 	}
-
 	$("name").focus();
 	$("results").value = "";
-}
+};
 
 const listArray = () => {
-
 	let scoresString = "";
-
 	for (var i = 0; i < names.length; i++) {
 		scoresString += names[i] + ", " + scores[i] + "\n";
 	}
-
 	$("results").value = scoresString;
-}
+};
 
 const showBest = () => {
-
-    let bestString = "";
+  let bestString = "";
 	let highScore = Math.max.apply(Math, scores);
-
 	for (let i in scores) {
 		if (scores[i] > highScore) highScore = scores[i];
 		bestString += "High Score Student = " + names[i] + "\n" + "High Score = " + highScore;
 	}
-
 	$("results").value = bestString;
 }
 
@@ -53,4 +47,4 @@ window.onload = () => {
 	$("name").focus();
 	$("list_array").onclick = listArray;
 	$("show_best").onclick = showBest;
-}
+};

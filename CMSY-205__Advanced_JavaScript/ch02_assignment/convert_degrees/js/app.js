@@ -12,13 +12,10 @@
 "use strict";
 
 window.onload  = () => {
-
     do {
         let entry = parseInt(prompt("Enter degrees in Fahrenheit" + "\n" + "or enter 999 to end entries.", 999)); 
         let convertToCelsius = (entry - 32) * (5/9);
-        
         alert ("Fahrenheit is " + empty + " degrees " + "\n" + "Celsius is " + convertToCelsius + " degrees.");
     }
-
     while (entry != 999);
-}
+};

@@ -13,16 +13,13 @@
 "use strict";
 
 window.onload = () => {
-
     let taxOwed = 0;
 
     /*
      * Prompt the user to enter a taxable income and parse it as an integer.
      * Prompt the user to enter 99999 to quit the program
      */
-
     do {
-
         let entry = parseInt(prompt("Enter taxable income as a valid number\n" + "Or enter 99999 to end entries", 99999));
 
         /*
@@ -33,7 +30,6 @@ window.onload = () => {
          * Apply 33% on taxable income from $178650 - $388350. 
          * Apply 35% on taxable income from $388350 and above. 
          */
-
         entry > 0 && entry <= 8700 ? tax_owed = (entry - 0) * .10 + 0
             : entry > 8700 && entry <= 35350 ? tax_owed = (entry - 8700) * .15 + 870
                 : entry > 35350 && entry <= 85650 ? tax_owed = (entry - 35350) * .25 + 4867
@@ -43,10 +39,7 @@ window.onload = () => {
                                 : null
 
         // Alert message to inform user the tax owed. 
-        alert("Tax owed is " + tax_owed);
-
+        alert("Tax owed is " + taxOwed);
     }
-
-    while (entry != 99999);
-    
-}
+    while (entry != 99999);  
+};

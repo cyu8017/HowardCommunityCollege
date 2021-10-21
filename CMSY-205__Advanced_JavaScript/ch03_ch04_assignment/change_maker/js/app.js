@@ -18,7 +18,7 @@
  * Function Purpose: 
  * -> Return output to HTML document with element of id. 
  */
-const $ = (id) => document.getElementById(id)
+const $ = (id) => document.getElementById(id);
 // End $().
 
 /* 

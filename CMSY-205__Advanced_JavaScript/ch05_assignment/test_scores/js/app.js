@@ -8,6 +8,9 @@
  * -> Use a Test Score array.
  */
 
+// Turn on Strict Mode.
+"use strict";
+
 const names = ["Ben", "Joel", "Judy", "Anne"];
 const scores = [88, 98, 77, 88];
 const n = 4;
@@ -26,7 +29,6 @@ const $ = id => document.getElementById(id);
  * -> Add a full name and test score to the array. 
  */
 function addScore() {
-
     // Obtain user entry values.
     const name = $("name").value;
     const score = parseInt($("score").value);
@@ -40,9 +42,7 @@ function addScore() {
         $("name").value = "";
         $("score").value = "";
     }
-
     $("name").focus();
-
 }; // End addScore().
 
 /*
@@ -50,7 +50,6 @@ function addScore() {
  * Function Purpose: Display the average high and low scores.
  */
 const displayResults = () => {
-
     let high = scores[0];
     let low = scores[0];
     let avg = 0;
@@ -60,27 +59,20 @@ const displayResults = () => {
         if (high < scores[i]) {
             high = scores[i];
         }
-
         // Low Score
         if (low > scores[i]) {
             low = scores[i];
         }
-
         // Average Score
         avg = avg + scores[i];
     }
-
     avg = avg / n;
-
     // Print average score, high score, low score to results id in HTML document.
     let con = "Average Score = " + avg + "\nHigh Score = " + high + "\nLow Score = " + low + "\n";
-
     for (i = 0; i < scores.length; i++) {
         con = con + "\n" + names[i] + ", " + scores[i];
     }
-
     $('results').innerHTML = con;
-
 } // End displayResult().
 
 /*
@@ -90,13 +82,11 @@ const displayResults = () => {
 const displayScores = () => {
     // Print all scores below. Show average, high, and low scores. 
     const con = "<tr><td colspan='2'><h2>Scores</h2></td></tr><tr><td>Name</td><td>Score</td></tr> ";
-
     for (i = 0; i < n; i++) {
         con = con + "<tr><td>" + names[z] + "</td><td>" + scores[z] + "</td></tr>";
     }
-
     $('results').innerHTML = con;
-} // End displayScores().
+}; // End displayScores().
 
 /*
  * Document Window onload.
@@ -105,4 +95,4 @@ const displayScores = () => {
 window.onload = () => {
     $("add").onclick = addScore;
     $("display").onclick = displayResults;
-} // End Window onload.
+}; // End Window onload.
