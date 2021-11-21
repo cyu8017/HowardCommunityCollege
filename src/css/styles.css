@@ -41,8 +41,12 @@ body {
     background-size: cover;
 }
 
-.jumbotron .col-lg-6.col-md-6.col-sm-12 {
+.jumbotron .col-lg-.col-md-6.col-sm-12 {
     padding: 0;
+}
+
+.col-lg-8.col-md-12.col-sm-12 {
+    margin: 0;
 }
 
 /* Section */
