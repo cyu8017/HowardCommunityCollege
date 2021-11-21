@@ -28,22 +28,8 @@ Assignment Description:
      - There should be no blank lines between names in the output files.
 
   c. All input files and output file must be closed after all names have been processed.
-
-try:
-    file1 = open("nameslist1.txt", "r")
-
-    while file1:
-        line  = file1.readline()
-        print(line)
-        if line == "":
-            print('\n')
-    file1.close()
-
-except:
-    print()
 '''
 import sys
-
 
 def main():
     try:
@@ -65,6 +51,5 @@ def main():
     except:
         print("Error")
         sys.exit()
-
 
 main()
