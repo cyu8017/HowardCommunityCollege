@@ -10,6 +10,8 @@
 // Turn on Strict Mode.
 'use strict';
 
+const app = () => {
+
 /* 
  * Object Name: studentRecord
  * Object Purpose: 
@@ -62,3 +64,7 @@ studentRecord.displayStudentRecord();
 studentRecord.setMajor("Mechanical Engineer");
 studentRecord.setGPA(3.19);
 console.log(studentRecord);
+
+}
+
+app();

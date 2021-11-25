@@ -10,55 +10,59 @@
 // Turn on Strict Mode 
 "use strict";
 
-/*
- * Function Name: init() 
- * Function Purpose: 
- * -> The init function sets the event handler functions for the mouseover
- * -> and mouseout events. 
- */
-const init = () => {  
+const app = () => {
+    /*
+     * Function Name: init() 
+     * Function Purpose: 
+     * -> The init function sets the event handler functions for the mouseover
+     * -> and mouseout events. 
+     */
+    const init = () => {
 
-    // Use the image with the id of map
-    const mapImage = document.getElementById("map");
-  
-    // Use the clearImage event handler function for the mouseover event.
-    mapImage.onmouseover = clearImage;
+        // Use the image with the id of map
+        const mapImage = document.getElementById("map");
 
-    // Use the blurImage eventhandler function for the mouseout event.
-    mapImage.onmouseout = blurImage;  
+        // Use the clearImage event handler function for the mouseover event.
+        mapImage.onmouseover = clearImage;
 
-}; // End init()
+        // Use the blurImage eventhandler function for the mouseout event.
+        mapImage.onmouseout = blurImage;
 
-/* 
- * Function Name: clearImage()
- * Function Purpose: 
- * -> Mouseover event handler function. 
- * -> Use the image with the id of map. 
- */
-const clearImage = () => {  
+    }; // End init()
 
-    // Use the image with the id of map
-    const image = document.getElementById("map");
-  
-    // Use the map.jpg image for the image source.
-    image.src = "images/map.jpg";
+    /* 
+     * Function Name: clearImage()
+     * Function Purpose: 
+     * -> Mouseover event handler function. 
+     * -> Use the image with the id of map. 
+     */
+    const clearImage = () => {
 
-}; // End clearImage()
+        // Use the image with the id of map
+        const image = document.getElementById("map");
 
-/* 
- * Function Name: blurImage()
- * Function Purpose: 
- * -> This function handles the mouse event to un-blur the image.
- */
-const blurImage = () => {  
+        // Use the map.jpg image for the image source.
+        image.src = "images/map.jpg";
 
-    // Use the image with the id of map
-    const image = document.getElementById("map");
-  
-    // Use the mapblur.jpg image for the image source.
-    image.src = "images/mapblur.jpg";
-    
-}; // End blurImage()
+    }; // End clearImage()
 
-// Set the window onload event to use the init function handler.
-window.onload = init;
+    /* 
+     * Function Name: blurImage()
+     * Function Purpose: 
+     * -> This function handles the mouse event to un-blur the image.
+     */
+    const blurImage = () => {
+
+        // Use the image with the id of map
+        const image = document.getElementById("map");
+
+        // Use the mapblur.jpg image for the image source.
+        image.src = "images/mapblur.jpg";
+
+    }; // End blurImage()
+
+    // Set the window onload event to use the init function handler.
+    window.onload = init;
+}
+
+app();
