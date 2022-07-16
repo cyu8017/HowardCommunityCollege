@@ -11,7 +11,7 @@
  */
 
 // Turn on Strict Mode. 
-'use strict';
+'use strict'
 
 const app = () => {
 
