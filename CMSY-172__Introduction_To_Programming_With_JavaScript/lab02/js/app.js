@@ -14,26 +14,28 @@
 'use strict';
 
 const app = () => {
-    /* 
-     * Function Name: isOdd()
-     * Function Purpose: 
-     * -> Create a function that checks if a number is even or odd.
-     * -> Pass in the parameter called num. 
-     * -> Check the number is divisible by 2 and ends with 0.
+
+    /**
+     * @function isOdd()
+     * @desc Create a function that checks if a number is even or odd.
+     * @desc Pass in the parameter called num. 
+     * @desc Check the number is divisible by 2 and ends with 0.
      */
     const isOdd = (num) => {
         if (num % 2 === 0) {
-            return false;
+            return false
         } else {
-            return true;
+            return true
         }
-    } // End isOdd()
+    }
 
-    /* 
-     * Prompt the user to enter an Integer.
-     * parseInt the user's entry converting decimal to integer.
+    /**
+     * @name numToCheck()
+     * @desc Prompt the user to enter an integer value.
+     * @desc Saves the integer value to the numToCheck variable.
+     * @desc ParseInt the user's entry by converting any decimal values into an integer value.
      */
-    let numToCheck = parseInt(prompt("Enter an integer: "));
+    let numToCheck = parseInt(prompt("Enter an integer: "))
 
     /* 
      * Check to see if the user entered a integer. 
@@ -42,12 +44,12 @@ const app = () => {
      * Print the result to the HTML document.
      */
     if (isNaN(numToCheck)) {
-        alert("Error: Your entry is not an integer.");
+        alert("Error: Your entry is not an integer.")
     } else {
-        let result = isOdd(numToCheck);
+        let result = isOdd(numToCheck)
         result === true ? document.write("Your entry of " + numToCheck + " is odd.")
-            : document.write("Your entry of " + numToCheck + " is even.");
+            : document.write("Your entry of " + numToCheck + " is even.")
     }
 }
 
-app();
+app()
