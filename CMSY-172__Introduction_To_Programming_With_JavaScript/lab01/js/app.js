@@ -20,8 +20,8 @@ const app = () => {
      * 
      * Press enter to print all months and their seasons.
      */
-    let month = parseInt(prompt("enter month number: ", "1"));
-    document.write("<strong>Seasons:</strong> <br><br>");
+    let month = parseInt(prompt("enter month number: ", "1"))
+    document.write("<strong>Seasons:</strong> <br><br>")
 
     /*
      * While Loop: Iterate through the months. 
@@ -52,12 +52,12 @@ const app = () => {
             : month < 6 ? document.write("Month " + month + " - Spring <br>")
                 : month < 9 ? document.write("Month " + month + " - Summer <br>")
                     : month < 12 ? document.write("Month " + month + " - Fall <br>")
-                        : document.write("Month " + month + " - Winter <br>");
+                        : document.write("Month " + month + " - Winter <br>")
 
         // Increment Month
-        month = month + 1;
+        month = month + 1
 
     } // End while loop.
 }
 
-app();
+app()
