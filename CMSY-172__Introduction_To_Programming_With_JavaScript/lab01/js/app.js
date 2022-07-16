@@ -10,7 +10,7 @@
  * -> Show the month name, month number, and season.
  */
 
-// Turn on Strict Mode.
+// Turn on strict mode.
 "use strict";
 
 const app = () => {
@@ -54,10 +54,10 @@ const app = () => {
                     : month < 12 ? document.write("Month " + month + " - Fall <br>")
                         : document.write("Month " + month + " - Winter <br>")
 
-        // Increment Month
+        // Increment months of the calendar.
         month = month + 1
 
-    } // End while loop.
+    }
 }
 
 app()

@@ -10,7 +10,7 @@
  * -> Show the number entry and even/odd output.
  */
 
-// Turn on Strict Mode. 
+// Turn on strict mode. 
 'use strict'
 
 const app = () => {

@@ -7,64 +7,62 @@
  * -> Display and modifying student records.
  */
 
-// Turn on Strict Mode.
-'use strict';
+// Turn on strict mode.
+'use strict'
 
 const app = () => {
 
-/* 
- * Object Name: studentRecord
- * Object Purpose: 
- * -> Creates an object. 
- * -> Displays student record.
- * -> Sets a new major.
- * -> Sets a new GPA.
- */
-const studentRecord = {
-    fname: "Charlie",
-    lname: "Yu",
-    major: "Computer Science",
-    gpa: 0,
-
-    /* 
-     * Function Name: displayStudentRecord
-     * Function Purpose: 
-     * -> Display all properties in the studentRecord object.
+    /**
+     * @name studentRecord
+     * @desc Creates an object.
+     * @desc Displays student record.
+     * @desc Sets a new major.
+     * @desc Sets a new GPA.
      */
-    displayStudentRecord: () => {
-        document.write("Name: " + this.fname + " " + this.lname + "<br><br>");
-        document.write("Major: " + this.major + "<br><br>");
-        document.write("GPA: " + this.gpa + "<br><br>");
-    }, // End displayStudentRecord Method
+    const studentRecord = {
+        fname: "Charlie",
+        lname: "Yu",
+        major: "Computer Science",
+        gpa: 0,
 
-    /* 
-     * Method Name: setMajor
-     * Method Purpose: 
-     * -> Create a new method called setMajor.
-     * -> This method will be used to update the major property. 
-     */
-    setMajor: (newMajor) => newMajor != "" ? this.major = newMajor 
-        : document.write("new major error!"),
-    // End setMajor Method
+        /**
+         * @name displayStudentRecord
+         * @desc Display student first name and last name.
+         * @desc Display the major of study.
+         * @desc Display the GPA.
+         */
+        displayStudentRecord: () => {
+            document.write("Name: " + this.fname + " " + this.lname + "<br><br>")
+            document.write("Major: " + this.major + "<br><br>")
+            document.write("GPA: " + this.gpa + "<br><br>")
+        },
 
-    /* 
-     * Method Name: setGPA()
-     * Method Purpose: 
-     * -> Create a new method called setGPA. 
-     * -> This method will be used to update the gpa property.
-     */
-    setGPA: (newGPA) => newGPA != "" ? this.gpa = newGPA 
-        : document.write("new gpa error!")
-    // End setGPA Method
+        /**
+         * @name setMajor
+         * @desc Create a new method called setMajor.
+         * @desc This method will be used to update the major property.
+         * @param {*} newMajor 
+         * @returns newMajor
+         */
+        setMajor: (newMajor) => newMajor != "" ? this.major = newMajor
+            : document.write("new major error!"),
 
-}; // End studentRecord Object
+        /**
+         * @name setGPA
+         * @desc Create a new method called setGPA.
+         * @desc This method will be used to update the gpa property.
+         * @param {*} newGPA 
+         * @returns newGPA
+         */
+        setGPA: (newGPA) => newGPA != "" ? this.gpa = newGPA
+            : document.write("new gpa error!")
+    };
 
-// Update studentRecord objects' major and gpa values.
-studentRecord.displayStudentRecord();
-studentRecord.setMajor("Mechanical Engineer");
-studentRecord.setGPA(3.19);
-console.log(studentRecord);
-
+    // Update studentRecord objects' major and gpa values.
+    studentRecord.displayStudentRecord()
+    studentRecord.setMajor("Mechanical Engineer")
+    studentRecord.setGPA(3.19)
+    console.log(studentRecord)
 }
 
-app();
+app()

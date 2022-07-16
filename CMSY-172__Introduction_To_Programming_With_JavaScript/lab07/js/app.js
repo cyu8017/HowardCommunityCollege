@@ -7,10 +7,11 @@
  * -> HTML Forms
  */
 
-// Turn on Strict Mode.
+// Turn on strict mode.
 "use strict";
 
 const app = () => {
+
     /* 
      * Function Name: processForm()
      * Function Purpose: 
@@ -19,17 +20,18 @@ const app = () => {
      * -> form. Add the program code to display the firstname, lastname, 
      * -> and email to the output element defined in the fucntion.
      */
+
+    /**
+     * @name processForm
+     * @desc Processes HTML form submission values and prints values to HTML page.
+     */
     const processForm = () => {
 
-        const output = document.getElementById("outputEl");
-
-        /*
-         * Use document.getElementById and the value property of the three 
-         * input elements to get the values from the form.
-         */
-        const firstName = document.getElementById("fname").value;
-        const lastName = document.getElementById("lname").value;
-        const email = document.getElementById("emailAddress").value;
+        // Map values to HTML element ID.
+        const output = document.getElementById("outputEl")
+        const firstName = document.getElementById("fname").value
+        const lastName = document.getElementById("lname").value
+        const email = document.getElementById("emailAddress").value
 
         /* 
          * Display the three values below the form. 
@@ -37,10 +39,9 @@ const app = () => {
          * -> The firstname and lastname combined on one line. 
          * -> the email address on a new line after the firstname and lastname. 
          */
-        output.innerHTML = firstName + " " + lastName + "<br><br>";
-        output.innerHTML += email;
-
-    }; // End processForm()
+        output.innerHTML = firstName + " " + lastName + "<br><br>"
+        output.innerHTML += email
+    }
 
     /* 
      * Function Name: init()
@@ -49,11 +50,16 @@ const app = () => {
      * -> form button with the id of dispVals. 
      * -> Use the processForm function as the event handler function.
      */
-    const init = () => document.getElementById("dispVals").onclick = processForm;
-    // End init();
+
+    /**
+     * @name init
+     * @desc The init function sets the event handler functions for the onclick processForm ability.
+     * @returns processForm
+     */
+    const init = () => document.getElementById("dispVals").onclick = processForm
 
     // Set the window onload event to use the init function handler.
-    window.onload = init;
+    window.onload = init
 }
 
-app();
+app()
