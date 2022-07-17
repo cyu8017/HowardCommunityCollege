@@ -1,7 +1,5 @@
 (function($){
 	$.fn.changeImage = function() {
-		return this.each(function() {
-
-		});
+		return this.each(function() {	})
 	}
-})(jQuery);
+})(jQuery)

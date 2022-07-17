@@ -9,74 +9,72 @@
  * -> total.
  */
 
-// Turn on Strict Mode
-"use strict";
+// Turn on strict mode.
+"use strict"
 
-/*
- * Function Name: $
- * Function Purpose: 
- * -> Return output to HTML document with element of id.
- */
-const $ = (id) => document.getElementById(id);
-// End $().
+const app = () => {
 
-/* 
- * Function Name: calculate_click()
- * Function Purpose: 
- * ->
- * -> Calculate subtotal and tax rate to obtain total.
- * -> Validate user entry for subtotal. 
- * -> Print error messages when entry is invalid.
- * -> Round total to nearest two digets.
- */
-const calculate_click = () => {
+    /**
+     * @name $
+     * @desc Money in form of change.
+     * @param {*} id 
+     * @returns Change value.
+     */
+    const $ = (id) => document.getElementById(id)
 
-    // Obtain user input and convert input to integer.
-    const subtotal = parseFloat($("subtotal").value);
-    const taxRate = parseFloat($("tax_rate").value);
+    /**
+     * @name calculateClick
+     * @desc Obtain the user's input value and convert the input to a integer value.
+     * @desc Calculate subtotal and tax rate to obtain a total value.
+     * @desc Validate the user's entry to obtain the subtotal value.
+     * @desc Print an error message when the entry value is invalid.
+     * @desc Print total value rounded to the nearest two digits.
+     */
+    const calculateClick = () => {
+        const subtotal = parseFloat($("subtotal").value)
+        const taxRate = parseFloat($("tax_rate").value)
 
-    // Set the following text fields to empty
-    $("sales_tax").value = "";
-    $("total").value = "";
+        // Set the following text fields to empty
+        $("sales_tax").value = ""
+        $("total").value = ""
 
-    // Check validation.
-    if (taxRate <= 0 || taxRate >= 12) {
-        alert("Must be a positive number less than 12.");
-    } else if (subtotal <= 0 || subtotal >= 10000) {
-        alert("Must be a positive number less than $10,000.");
-    } else {
-        // Perform calculation to find Sales Tax and Total 
-        var sales_tax = subtotal * (taxRate / 100);
-        sales_tax = parseFloat(sales_tax.toFixed(2));
-        var total = subtotal + sales_tax;
+        // Check validation of the inputs.
+        if (taxRate <= 0 || taxRate >= 12) {
+            alert("Must be a positive number less than 12.")
+        } else if (subtotal <= 0 || subtotal >= 10000) {
+            alert("Must be a positive number less than $10,000.")
+        } else {
+            // Perform calculation to find Sales Tax and Total 
+            var sales_tax = subtotal * (taxRate / 100)
+            sales_tax = parseFloat(sales_tax.toFixed(2))
+            var total = subtotal + sales_tax
 
-        // Display results
-        document.getElementById("sales_tax").value = sales_tax;
-        document.getElementById("total").value = total.toFixed(2);
+            // Display results
+            document.getElementById("sales_tax").value = sales_tax
+            document.getElementById("total").value = total.toFixed(2)
+        }
     }
-} // End calculate_click().
 
-/*
- * Function Name: clear_click()
- * Function Purpose: 
- * -> Listen for the user to click the clear button.
- * -> Clear subtotal value.
- * -> Clear tax_rate value.
- * -> Clear sales_tax value.
- * -> Clear total value.
- */
-const clear_click = () => {
-    $("subtotal").value = "";
-    $("tax_rate").value = "";
-    $("sales_tax").value = "";
-    $("total").value = "";
-} // End clear_click()
+    /**
+     * @name clearClick
+     * @desc Listen for the user to click the clear button.
+     * @desc Clear values and set to empty.
+     */
+    const clearClick = () => {
+        $("subtotal").value = ""
+        $("tax_rate").value = ""
+        $("sales_tax").value = ""
+        $("total").value = ""
+    }
 
-/*
- * Document Window onload.
- * Apply action listeners to buttons.
- */
-window.onload = () => {
-    $('calculate').onclick = calculate_click;
-    $('clear').onclick = clear_click;
-} // End Window onload.
+    /**
+     * Document window onload.
+     * Apply action listeners to buttons.
+     */
+    window.onload = () => {
+        $('calculate').onclick = calculateClick
+        $('clear').onclick = clearClick
+    }
+}
+
+app()

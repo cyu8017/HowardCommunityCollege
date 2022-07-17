@@ -10,57 +10,53 @@
  * -> from 0 through 99 cents.
  */
 
-// Turn on Strict Mode
-"use strict";
+// Turn on strict mode.
+"use strict"
 
-/* 
- * Function Name: $
- * Function Purpose: 
- * -> Return output to HTML document with element of id. 
- */
-const $ = (id) => document.getElementById(id);
-// End $().
+const app = () => {
 
-/* 
- * Function Name: make_change()
- * Function Purpose:
- * -> Obtain total value and convert it to an integer.
- * -> Calculate for Quarters, Dimes, Nickels, and Pennies.
- * -> Print change output to HTML document.
- */
-const make_change = () => {
+    /**
+     * @name $
+     * @desc Money in form of change.
+     * @param {*} id 
+     * @returns Change value.
+     */
+    const $ = (id) => document.getElementById(id)
 
-    let total = parseInt(document.getElementById("cents").value);
+    /**
+     * @name makeChange
+     * @desc Takes in value of money and calculates the total quarters, dimes, nickesl and pennies it can make.
+     */
+    const makeChange = () => {
 
-    if (total !== total) return;
+        let total = parseInt(document.getElementById("cents").value)
 
-    // Quarters Calculation
-    let quarters = Math.floor(total / 25);
-    total -= quarters * 25;
+        if (total !== total) return
 
-    // Dimes Calculation
-    let dimes = Math.floor(total / 10);
-    total -= dimes * 10;
+        // Calculate quarters.
+        let quarters = Math.floor(total / 25)
+        total -= quarters * 25
 
-    // Nickels Calculation
-    let nickels = Math.floor(total / 5);
-    total -= nickels * 5;
+        // Calculate dimes.
+        let dimes = Math.floor(total / 10)
+        total -= dimes * 10
 
-    // Pennies Calculation
-    let pennies = total;
-    total -= pennies;
+        // Calculate nickels.
+        let nickels = Math.floor(total / 5)
+        total -= nickels * 5
 
-    // Print Output to HTML Page
-    document.getElementById("quarters").value = quarters;
-    document.getElementById("dimes").value = dimes;
-    document.getElementById("nickels").value = nickels;
-    document.getElementById("pennies").value = pennies;
+        // Calculate pennies.
+        let pennies = total
+        total -= pennies
 
-} // End make_change().
+        // Maps values to HTML ID.
+        document.getElementById("quarters").value = quarters
+        document.getElementById("dimes").value = dimes
+        document.getElementById("nickels").value = nickels
+        document.getElementById("pennies").value = pennies
+    }
 
-/*
- * Document Window onload.
- * Apply action listeners to buttons.
- */
-window.onload = () => $("calculate").onclick = make_change;
-// End Window onload.
+    window.onload = () => $("calculate").onclick = makeChange
+}
+
+app()

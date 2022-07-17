@@ -2,7 +2,7 @@
 
 const names = ["Ben", "Joel", "Judy", "Anne"];
 const scores = [88, 98, 77, 88];
-const textDisplay;
+let textDisplay;
 
 const $ = (id) => document.getElementById(id);
 

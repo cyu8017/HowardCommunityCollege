@@ -10,7 +10,7 @@
  */
 
 // Turn on Strict Mode
-"use strict";
+"use strict"
 
 /* 
  * Function Name: ()
@@ -20,33 +20,33 @@
  * -> When the action listeners are clicked, apply effects.
  */
 $(document).ready(() => {
-  imageCounter = 0;
+  imageCounter = 0
   $("#image_list a").each(() => {
     // get the image URL and caption for each image
-    let imageURL = $(this).attr("href");
-    let caption = $(this).attr("title");
-    let slideNode = $("image_list");
+    let imageURL = $(this).attr("href")
+    let caption = $(this).attr("title")
+    let slideNode = $("image_list")
 
     // preload the image for each link      
-    let galleryImage = new Image();
-    galleryImage.src = imageURL;
+    let galleryImage = new Image()
+    galleryImage.src = imageURL
 
     // set up the event handlers for each link
     $(this).click((evt) => {
       $("#image").animate({
         marginLeft: "-=100px",
       }, 2000, () => {
-        $("#caption").fadeOut(400);
+        $("#caption").fadeOut(400)
         $("#image").fadeOut(400, () => {
-          $(this).attr("src", imageURL).css({ "marginLeft": 0 }).fadeIn(200);
-          $("#caption").text(caption).fadeIn(200);
-        });
-        imageCounter = (imageCounter + 1) % imageURL.length;
-      });
-      evt.preventDefault();
-    });
-  });
+          $(this).attr("src", imageURL).css({ "marginLeft": 0 }).fadeIn(200)
+          $("#caption").text(caption).fadeIn(200)
+        })
+        imageCounter = (imageCounter + 1) % imageURL.length
+      })
+      evt.preventDefault()
+    })
+  })
 
   // move the focus to the first link
-  $("li:first-child a").focus();
-}); // End ();
+  $("li:first-child a").focus()
+})
