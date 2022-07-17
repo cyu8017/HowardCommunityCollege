@@ -1,15 +1,13 @@
-"use strict"
+'use strict'
 
 $(document).ready(() => {
-    $("#employee1 div,#employee2 div").draggable({
+    $('#employee1 div,#employee2 div').draggable({
         cursor: "move",
         grid: [25, 34]
     });
 
     $("#employee1, #employee2").droppable({
-        drop: () => {
-            $(this).addClass("ui-state-highlight").find("p").html("Task Added");
-        },
+        drop: () => $(this).addClass("ui-state-highlight").find("p").html("Task Added")
     });
 
     $("#add1").click(() => {
