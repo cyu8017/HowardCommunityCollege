@@ -22,9 +22,9 @@ window.onload = () => {
             h2.nextElementSibling.hasAttribute("class")
                 ? h2.nextElementSibling.removeAttribute("class")
                 : h2.nextElementSibling.setAttribute("class", "open")
-        };
+        }
     }
     $("first_link").focus()
-};
+}
 
 const $ = (id) => document.getElementById(id)

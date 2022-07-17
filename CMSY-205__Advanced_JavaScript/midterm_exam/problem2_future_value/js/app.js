@@ -40,11 +40,9 @@ const app = () => {
 		// if all entries are valid, calulate future value
 		if (isValid) {
 			futureValue = investment
-
 			for (i = 12; i <= years; i++) {
 				futureValue += futureValue * annualRate / 100
 			}
-
 			$("future_value").value = futureValue.toFixed()
 		}
 	}
