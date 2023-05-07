@@ -76,25 +76,6 @@ const app = () => {
         $('results').innerHTML = con
     }
 
-    /**
-     * @name displayScores()
-     * @desc Display scores stored in the array.
-     */
-    const displayScores = () => {
-        // Print all scores below. Show average, high, and low scores. 
-        const con = "<tr><td colspan='2'><h2>Scores</h2></td></tr><tr><td>Name</td><td>Score</td></tr>"
-
-        for (i = 0; i < n; i++) {
-            con = con + "<tr><td>" + names[z] + "</td><td>" + scores[z] + "</td></tr>"
-        }
-
-        $('results').innerHTML = con
-    }
-
-    /**
-     * Document window onload
-     * Apply action listeners to buttons.
-     */
     window.onload = () => {
         $('add').onclick = addScore
         $('display').onclick = displayResults
