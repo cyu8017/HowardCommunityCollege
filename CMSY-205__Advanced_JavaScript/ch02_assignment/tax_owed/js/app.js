@@ -9,19 +9,19 @@
  * -> the income tax that is owed for a taxable income amount.
  */
 
-// Turn on strict mode. 
-"use strict"
-
 const app = () => {
+    'use strict'
+
     window.onload = () => {
-        let taxOwed = 0;
+        let taxOwed = 0
+        let entry = 99999
     
         /*
          * Prompt the user to enter a taxable income and parse it as an integer.
          * Prompt the user to enter 99999 to quit the program
          */
         do {
-            let entry = parseInt(prompt("Enter taxable income as a valid number\n" + "Or enter 99999 to end entries", 99999))
+            entry = parseInt(prompt("Enter taxable income as a valid number\n" + "Or enter 99999 to end entries", 99999))
     
             /*
              * Apply 10% on taxable income from $0 - $8700.
@@ -46,6 +46,5 @@ const app = () => {
         while (entry != 99999)
     }
 }
-
 
 app()
