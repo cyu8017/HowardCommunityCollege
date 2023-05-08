@@ -8,17 +8,20 @@
  * -> Change temperature input from Fahrenheit to Celsius.
  */
 
-// Turn on strict mode. 
-"use strict"
-
 const app = () => {
-    window.onload  = () => {
+    "use strict"
+
+    window.onload = () => {
+        let entry
+
         do {
-            let entry = parseInt(prompt("Enter degrees in Fahrenheit" + "\n" + "or enter 999 to end entries.", 999))
-            let convertToCelsius = (entry - 32) * (5/9)
-            alert ("Fahrenheit is " + empty + " degrees " + "\n" + "Celsius is " + convertToCelsius + " degrees.")
-        }
-        while (entry != 999)
+            entry = parseInt(prompt("Enter degrees in Fahrenheit" + "\n" + "or enter 999 to end entries." , 999))
+
+            if (entry != 999) {
+                const convertToCelsius = (entry - 32) * (5/9)
+                alert("Fahrenheit is " + entry + " degrees " + "\n" + "Celsius is " + convertToCelsius + " degrees.")
+            }
+        } while (entry !== 999)
     }
 }
 
