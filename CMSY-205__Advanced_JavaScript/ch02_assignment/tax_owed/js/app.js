@@ -31,11 +31,11 @@ const app = () => {
              * Apply 33% on taxable income from $178650 - $388350. 
              * Apply 35% on taxable income from $388350 and above. 
              */
-            entry > 0 && entry <= 8700 ? tax_owed = (entry - 0) * .10 + 0
-                : entry > 8700 && entry <= 35350 ? tax_owed = (entry - 8700) * .15 + 870
-                    : entry > 35350 && entry <= 85650 ? tax_owed = (entry - 35350) * .25 + 4867
-                        : entry > 856650 && entry <= 178650 ? tax_owed = (entry - 85650) * .28 + 17442
-                            : entry > 178650 && entry <= 388350 ? tax_owed = (entry - 178650) * .33 + 43482
+            entry > 0 && entry <= 8700 ? taxOwed = (entry - 0) * .10 + 0
+                : entry > 8700 && entry <= 35350 ? taxOwed = (entry - 8700) * .15 + 870
+                    : entry > 35350 && entry <= 85650 ? taxOwed = (entry - 35350) * .25 + 4867
+                        : entry > 856650 && entry <= 178650 ? taxOwed = (entry - 85650) * .28 + 17442
+                            : entry > 178650 && entry <= 388350 ? taxOwed = (entry - 178650) * .33 + 43482
                                 : entry > 388350 ? (entry - 388350) * .35 + 112683
                                     : null
     
