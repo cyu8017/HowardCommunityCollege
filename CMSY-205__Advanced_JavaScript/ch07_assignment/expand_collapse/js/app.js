@@ -15,11 +15,20 @@
  * Function Purpose: 
  * -> Expand/Collapse Paragraphs on click.
  */
-$(document).ready(() => {
-    $("#jdom a").click(() => {
-        $(this).prev("div").toggle();
+// $(document).ready(() => {
+//     $("#jdom a").click(() => {
+//         $(this).prev("div").toggle();
+//         $(this).prev("div").is(":visible")
+//             ? $(this).text("Show less")
+//             : $(this).text("Show more")
+//     })
+// })
+
+$(function() {
+    $("#jdom a").click(function() {
+        $(this).prev("div").toggle()
         $(this).prev("div").is(":visible")
             ? $(this).text("Show less")
-            : $(this).text("Show more")
+            : $(this).text("show more")
     })
 })

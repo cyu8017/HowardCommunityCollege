@@ -8,10 +8,8 @@
  * -> Create FAQ application.
  */
 
-// Turn on strict mode.
-"use strict"
-
 const app = () => {
+    "use strict"
     
     /**
      * @name $
@@ -31,27 +29,26 @@ const app = () => {
         const faqs = $("faqs")
         const h2Elements = faqs.getElementsByTagName("h2")
         let h2Node
+
         for (let i = 0; i < h2Elements.length; i++) {
             h2Node = h2Elements[i]
 
-            // Attach event handler
-            h2Node.onclick = () => {
+            h2Node.onclick = function() {
                 let h2 = this
                 for (let i = 0; i < h2Elements.length; i++) {
-                    if (h2Elements[i] != this) {
-                        h2Elements[i].removeAttribute("class")
-                        h2Elements[i].nextElementSibling.removeAttribute("class")
+                    if (h2Elements[i] !== this) {
+                        h2Elements[i].classList.remove("minus");
+                        if (h2Elements[i].nextElementSibling) {
+                            h2Elements[i].nextElementSibling.classList.remove("open")
+                        }
                     }
                 }
 
-                h2.hasAttribute("class")
-                    ? h2.removeAttribute("class")
-                    : h2.setAttribute("class", "minus")
-
-                h2.nextElementSibling.hasAttribute("class")
-                    ? h2.nextElementSibling.removeAttribute("class")
-                    : h2.nextElementSibling.setAttribute("class", "open")
-            }
+                h2.classList.toggle("minus")
+                if (h2.nextElementSibling) {
+                    h2.nextElementSibling.classList.toggle("open")
+                }
+            };
         }
 
         $("first_link").focus()
