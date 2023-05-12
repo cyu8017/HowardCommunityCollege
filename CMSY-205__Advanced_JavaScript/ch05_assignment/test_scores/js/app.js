@@ -8,10 +8,9 @@
  * -> Use a Test Score array.
  */
 
-// Turn on strict mode.
-"use strict"
-
 const app = () => {
+    'use strict'
+
     const names = ["Ben", "Joel", "Judy", "Anne"]
     const scores = [88, 98, 77, 88]
     const n = 4

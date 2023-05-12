@@ -8,10 +8,9 @@
  * -> Develop an application that uses an array to manage a "To Do" list.
  */
 
-// Turn on strict mode
-"use strict"
-
 const app = () => {
+    'use strict'
+
     // Create empty array called taskList.
     let taskList = [];
 

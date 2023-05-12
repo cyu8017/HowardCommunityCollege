@@ -1,6 +1,6 @@
-'use strict'
-
 const app = () => {
+    'use strict'
+
     let total = 0
     let entryCount = 0
     let entry

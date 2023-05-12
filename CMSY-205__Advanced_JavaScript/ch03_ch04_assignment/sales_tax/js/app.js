@@ -5,8 +5,7 @@
  * Document Date: 
  * Document Description: 
  * -> Homework Assignment - Chapter 3 Problem 1: Sales Calculator Tax
- * -> Develop an application that calculates sales tax and invoice 
- * -> total.
+ * -> Develop an application that calculates sales tax and invoice total.
  */
 
 const app = () => {

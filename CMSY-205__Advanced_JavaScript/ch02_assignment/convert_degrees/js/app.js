@@ -9,7 +9,7 @@
  */
 
 const app = () => {
-    "use strict"
+    'use strict'
 
     window.onload = () => {
         let entry
