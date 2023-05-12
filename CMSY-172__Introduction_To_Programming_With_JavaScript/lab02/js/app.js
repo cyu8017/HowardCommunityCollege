@@ -45,7 +45,8 @@ const app = () => {
         alert("Error: Your entry is not an integer.")
     } else {
         let result = isOdd(numToCheck)
-        result === true ? document.write("Your entry of " + numToCheck + " is odd.")
+        result === true 
+            ? document.write("Your entry of " + numToCheck + " is odd.")
             : document.write("Your entry of " + numToCheck + " is even.")
     }
 }

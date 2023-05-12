@@ -10,10 +10,8 @@
  * -> from 0 through 99 cents.
  */
 
-// Turn on strict mode.
-"use strict"
-
 const app = () => {
+    'use strict'
 
     /**
      * @name $

@@ -26,7 +26,7 @@ const addElement = () => {
 
 const listArray = () => {
 	let scoresString = "";
-	for (var i = 0; i < names.length; i++) {
+	for (let i = 0; i < names.length; i++) {
 		scoresString += names[i] + ", " + scores[i] + "\n";
 	}
 	$("results").value = scoresString;
