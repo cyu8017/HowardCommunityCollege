@@ -7,10 +7,8 @@
  * -> Display and modifying student records.
  */
 
-// Turn on strict mode.
-'use strict'
-
 const app = () => {
+    'use strict'
 
     /**
      * @name studentRecord

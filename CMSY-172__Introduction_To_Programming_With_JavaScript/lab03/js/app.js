@@ -7,10 +7,8 @@
  * -> Lab 3 - Arrays
  */
 
-/** Turn on Strict Mode */
-'use strict'
-
 const app = () => {
+    'use strict'
 
     /**
      * @name squareIt

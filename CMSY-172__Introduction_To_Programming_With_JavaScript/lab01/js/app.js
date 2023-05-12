@@ -10,10 +10,9 @@
  * -> Show the month name, month number, and season.
  */
 
-// Turn on strict mode.
-"use strict";
-
 const app = () => {
+    'use strict'
+
     /*
      * Prompt user to enter month number. i.e., month 0 = January,
      * month 1 = February and so on....

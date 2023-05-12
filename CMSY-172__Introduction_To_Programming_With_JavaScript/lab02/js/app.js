@@ -10,10 +10,8 @@
  * -> Show the number entry and even/odd output.
  */
 
-// Turn on strict mode. 
-'use strict'
-
 const app = () => {
+    'use strict'
 
     /**
      * @function isOdd()

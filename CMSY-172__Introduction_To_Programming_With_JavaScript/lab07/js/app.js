@@ -7,10 +7,8 @@
  * -> HTML Forms
  */
 
-// Turn on strict mode.
-"use strict";
-
 const app = () => {
+    "use strict"
 
     /* 
      * Function Name: processForm()

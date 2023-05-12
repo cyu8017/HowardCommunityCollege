@@ -7,10 +7,8 @@
  * -> HTML Forms
  */
 
-// Turn on strict mode.
-'use strict';
-
 const app = () => {
+  'use strict';
 
   // Trim the pageTitle and convert the title to uppercase. 
   let pageTitle = 'JS Native Object Practice'

@@ -7,10 +7,8 @@
  * -> Un-blur an image.
  */
 
-// Turn on strict mode.
-"use strict"
-
 const app = () => {
+    'use strict'
 
     /**
      * @name init

@@ -8,7 +8,7 @@
  */
 
 // Turn on strict mode.
-"use strict"
+'use strict'
 
 const app = () => {
 
@@ -42,7 +42,7 @@ const app = () => {
 
     // Use a for loop through the paragraph list and console.log each paragraph. 
 
-    for (const i = 0; i < paragraphList.length; i++) {
+    for (let i = 0; i < paragraphList.length; i++) {
         console.log(paragraphList[i])
     }
 }
