@@ -1,8 +1,5 @@
 def compute_average(total, count):
-    if count == 0:
-        return 0
-
-    return total / count
+    return total / count if count != 0 else 0
 
 
 def display_game_results(goals_per_game, shots_per_game, shots_per_goal):
