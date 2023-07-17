@@ -21,7 +21,7 @@ def main():
 
     display_game_results(average_goals_per_game_scored, average_shots_per_game_made, average_shots_per_goal_made)
 
-    print("\n Thank you for u sing the program.")
+    print("\n Thank you for using the program.")
 
 
 if __name__ == '__main__':
