@@ -1,7 +1,6 @@
 def main():
     # Print message to user
-    print('Temperature conversions using a for loop.')
-    print()
+    print('Temperature conversions using a for loop. \n')
 
     # Print conversion table
     print("{:<5} {:<5}".format('Cels', 'Fahr'))
@@ -11,7 +10,7 @@ def main():
 
     # While loop range is 21 counts to 20 in numerical list.
     while cels <= 21:
-        # Take in Celsius from loop and convert it to fahrenheit.
+        # Take in Celsius from loop and convert it to Fahrenheit.
         cels2Fahr = f'{((9 / 5) * cels + 32):.2f}'
 
         # Print solution in table.

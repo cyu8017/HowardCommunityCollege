@@ -1,7 +1,6 @@
 def main():
     # Print message to user
-    print('Temperature conversions using a for loop.')
-    print()
+    print('Temperature conversions using a for loop. \n')
 
     # Print conversion table
     print("{:<5} {:<5}".format('Cels', 'Fahr'))
