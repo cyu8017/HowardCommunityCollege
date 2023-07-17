@@ -27,8 +27,7 @@ def main():
     }
 
     # Prompt the user to enter the course number to search.
-    print("Course: CS101 CS102 CS103 NT110, CM241")
-    print()
+    print("Course: CS101 CS102 CS103 NT110, CM241\n")
     course_number_entry = input("Enter a course number to display: ")
 
     # Print catalog:
@@ -38,9 +37,7 @@ def main():
     if course_number_entry == "":
         print("Your entry is empty. Please enter a course number.")
     elif course_number_entry in course_room_number:
-        print()  # Print empty line.
-        print(course_number_entry)
-        print()  # Print empty line.
+        print("\n", course_number_entry, "\n")
         print("Room        : ", course_room_number.get(course_number_entry))
         print("Instructor  : ", course_instructor.get(course_number_entry))
         print("Time        : ", course_time.get(course_number_entry))

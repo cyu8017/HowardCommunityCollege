@@ -4,7 +4,6 @@ def main():
     waffle_cone_price = 1.55
 
     print("How many scoops would you like?")
-
     num_of_ice_cream_scoops = int(input("Enter the number of scoops (minimum 1): "))
 
     if num_of_ice_cream_scoops <= 0:
@@ -27,22 +26,19 @@ def main():
         total_cost = num_of_ice_cream_scoops * discounted_price_per_scoop
 
     if num_of_ice_cream_scoops == 1:
-        print()  # Print a blank line.
-        print(f"The price per scoop is: ${regular_price_per_scoop:.2f}")
+        print(f"\nThe price per scoop is: ${regular_price_per_scoop:.2f}")
         print(f"You ordered {num_of_ice_cream_scoops} scoop")
         print(f"Your total cost is: ${total_cost:.2f}")
         print("Thank you for using the program")
 
     elif num_of_ice_cream_scoops == 2:
-        print()  # Print a blank line.
-        print(f"The price per scoop is: ${regular_price_per_scoop:.2f}")
+        print(f"\nThe price per scoop is: ${regular_price_per_scoop:.2f}")
         print(f"You ordered {num_of_ice_cream_scoops} scoops")
         print(f"Your total cost is: ${total_cost:.2f}")
         print("Thank you for using the program")
 
     elif num_of_ice_cream_scoops >= 3:
-        print()  # Print a blank line.
-        print(f"The price per scoop is: ${discounted_price_per_scoop:.2f}")
+        print(f"\nThe price per scoop is: ${discounted_price_per_scoop:.2f}")
         print(f"You ordered {num_of_ice_cream_scoops} scoops")
         print(f"Your total cost is: ${total_cost:.2f}")
         print("Thank you for using the program")

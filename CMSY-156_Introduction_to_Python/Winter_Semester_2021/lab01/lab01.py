@@ -10,4 +10,5 @@ def main():
     print(f'{celsiusEntry:.2f}', "degrees Celsius converted to Fahrenheit is:", f'{c2F:.2f}')
 
 
-main()
+if __name__ == '__main__':
+    main()

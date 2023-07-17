@@ -1,8 +1,23 @@
 import sys
 
 
-def main():
+def to_fahr(ctemp):
+    return (9 / 5) * ctemp + 32
 
+
+def to_cels(ftemp):
+    return (ftemp - 32) * 5 / 9
+
+
+def display_menu():
+    print('Temperature Conversions')
+    print()
+    print('1) Celsius to Fahrenheit')
+    print('2) Fahrenheit to Celsius')
+    print('3) Quit')
+
+
+def main():
     # Print menu, then prompt user for an input.
     display_menu()
     choice = input('Enter your choice: ')
@@ -38,22 +53,6 @@ def main():
         print()  # Print blank line
         display_menu()
         choice = input('Enter your choice: ')
-
-
-def to_fahr(ctemp):
-    return (9/5) * ctemp + 32
-
-
-def to_cels(ftemp):
-    return (ftemp - 32) * 5 / 9
-
-
-def display_menu():
-    print('Temperature Conversions')
-    print()
-    print('1) Celsius to Fahrenheit')
-    print('2) Fahrenheit to Celsius')
-    print('3) Quit')
 
 
 if __name__ == "__main__":

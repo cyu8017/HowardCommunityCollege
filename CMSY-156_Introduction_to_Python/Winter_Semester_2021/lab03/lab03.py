@@ -12,8 +12,7 @@ def main():
     # Print the numOfScoops entry to be a whole number with 0 decimal places.
     # Print results with pricing to include 2 decimal places.
     if (numOfScoops > 0) and (numOfScoops < 3):
-        print()  # Print blank line.
-        print('The price per scoop is $', f'{pricePerScoop:.2f}')
+        print('\nThe price per scoop is $', f'{pricePerScoop:.2f}')
         print('You ordered', f'{numOfScoops:.0f}', "scoop.")
         print('Your total cost is $', f'{(numOfScoops * pricePerScoop):.2f}', '.')
 
@@ -22,8 +21,7 @@ def main():
     # Print the numOfScoops entry to be a whole number with 0 decimal places.
     # Print results with pricing to include 2 decimal places.
     elif numOfScoops >= 3:
-        print()  # Print blank line.
-        print('The price per scoop is $', f'{discountedPricePerScoop:.2f}')
+        print('\nThe price per scoop is $', f'{discountedPricePerScoop:.2f}')
         print('You ordered', f'{numOfScoops:.0f}', "scoops.")
         print('Your total cost is $', f'{(numOfScoops * discountedPricePerScoop):.2f}', '.')
 
@@ -33,4 +31,5 @@ def main():
         print('You asked for', f'{numOfScoops:.0f}', 'scoops. You must order one or more scoops.')
 
 
-main()
+if __name__ == '__main__':
+    main()

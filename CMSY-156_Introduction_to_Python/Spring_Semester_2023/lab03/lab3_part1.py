@@ -71,8 +71,7 @@ def main():
     sales_tax_amount = pizza_cost * sales_tax_rate
     total_cost_due = pizza_cost + sales_tax_amount + delivery_charge + tip_amount
 
-    print()  # Print a blank line.
-    print("You ordered the", pizza_name)
+    print("\nYou ordered the", pizza_name)
 
     # Display the total cost with appropriate messages.
     if order_type == 2:
@@ -81,8 +80,7 @@ def main():
         print(f"{delivery_charge_message}${total_cost_due:.2f}")
         print("The pizza will be delivered to:", delivery_address)
 
-    print()  # Print a blank line.
-    print("Thank you for using the CMSY-156 Pizza Shop. Please come again!")
+    print("\nThank you for using the CMSY-156 Pizza Shop. Please come again!")
 
 
 if __name__ == '__main__':

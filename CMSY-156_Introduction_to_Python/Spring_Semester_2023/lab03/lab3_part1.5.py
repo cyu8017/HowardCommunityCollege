@@ -20,11 +20,9 @@ def main():
             average_goals_per_game = total_goals / total_games
             average_shots_per_game = total_shots / total_games
 
-        print()  # Print a blank line.
-        print(f"The average goals per game is: {average_goals_per_game:.2f}")
+        print(f"\nThe average goals per game is: {average_goals_per_game:.2f}")
         print(f"The average shots on goal per game is: {average_shots_per_game:.2f}")
-        print(f"The average shots per goal is: {average_shots_per_goal:.2f}")
-        print()  # Print a blank line.
+        print(f"The average shots per goal is: {average_shots_per_goal:.2f} \n")
 
         user_input = input("Do you want to continue? (yes/no): ")
         if user_input.lower() == "no":
