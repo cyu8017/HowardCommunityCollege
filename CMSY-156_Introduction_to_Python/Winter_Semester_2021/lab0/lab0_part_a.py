@@ -1,6 +1,6 @@
-# Programmer Name: Klem N. Tine
-# My first Python program
-# Lab 1 Part A: Printing text to the screen
+def main():
+    print("Hello CMSY 156 Class")
 
-# Display Hello message to the screen
-print ("Hello CMSY 156 Class")
+
+if __name__ == "__main__":
+    main()
