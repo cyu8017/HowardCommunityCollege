@@ -1,26 +1,20 @@
-import sys
-
-
 def main():
     try:
-        namelist1 = open("nameslist1.txt", "r")
-        lines1 = namelist1.readline()
+        with open("nameslist1.txt", "r") as namelist1, \
+             open("nameslist2.txt", "r") as namelist2, \
+             open('allnames.txt', 'w') as allnames:
+            allnames.writelines(namelist1)
+            allnames.writelines(namelist2)
 
-        namelist2 = open("nameslist2.txt", "r")
-        lines2 = namelist2.readlines()
+    except FileNotFoundError:
+        print("Error -- One or more input files not found.")
 
-        allnames = open('allnames.txt', 'w')
+    except IOError:
+        print("Error -- An error occurred while reading or writing the files.")
 
-        while lines1 != "":
-            allnames.write(lines1)
-            lines1 = namelist1.readline()
-
-        for line in lines2:
-            allnames.write(line)
-
-    except:
-        print("Error")
-        sys.exit()
+    except Exception as e:
+        print("Error -- An unexpected error occurred:", str(e))
 
 
-main()
+if __name__ == '__main__':
+    main()
