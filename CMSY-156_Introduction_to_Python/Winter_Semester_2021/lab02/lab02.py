@@ -10,4 +10,5 @@ def main():
     print(f'{fahrenheitEntry:.2f}', "degrees Fahrenheit converts to approximately", f'{f2C:.2f}', "degrees Celsius.")
 
 
-main()
+if __name__ == "__main__":
+    main()

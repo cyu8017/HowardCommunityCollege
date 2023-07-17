@@ -48,4 +48,5 @@ def main():
         print(course_number_entry, ": not found")
 
 
-main()
+if __name__ == "__main__":
+    main()

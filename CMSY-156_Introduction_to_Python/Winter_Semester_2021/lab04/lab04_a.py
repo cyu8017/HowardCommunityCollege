@@ -23,4 +23,5 @@ def main():
         print(solution)
 
 
-main()
+if __name__ == "__main__":
+    main()

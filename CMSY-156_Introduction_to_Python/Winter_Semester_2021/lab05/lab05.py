@@ -56,4 +56,5 @@ def display_menu():
     print('3) Quit')
 
 
-main()
+if __name__ == "__main__":
+    main()
