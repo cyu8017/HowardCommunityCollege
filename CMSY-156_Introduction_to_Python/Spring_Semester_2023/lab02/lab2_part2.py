@@ -19,12 +19,12 @@ def print_receipt(make_model, phone_cost, warranty_cost):
     total_amount_due = calculate_total_amount(phone_cost, warranty_cost)
 
     print("\n Receipt:")
-    print(" Model: {}".format(make_model))
-    print(" Cost of Phone: ${:.2f}".format(phone_cost))
-    print(" Warranty cost: ${:.2f}".format(warranty_cost))
-    print(" Sales Tax: ${:.2f}".format(sales_tax))
-    print(" Shipping Cost: ${:.2f}".format(shipping_cost))
-    print(" Total Price: ${:.2f}".format(total_amount_due))
+    print("Model: {}".format(make_model))
+    print("Cost of Phone: ${:.2f}".format(phone_cost))
+    print("Warranty cost: ${:.2f}".format(warranty_cost))
+    print("Sales Tax: ${:.2f}".format(sales_tax))
+    print("Shipping Cost: ${:.2f}".format(shipping_cost))
+    print("Total Price: ${:.2f}".format(total_amount_due))
 
 
 def main():
