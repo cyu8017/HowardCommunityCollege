@@ -13,6 +13,7 @@ def convert_currency(amount, from_currency, to_currency):
 
     if from_currency_name is None:
         return None, f"Currency information not found for {from_currency}."
+
     if to_currency_name is None:
         return None, f"Currency information not found for {to_currency}."
 

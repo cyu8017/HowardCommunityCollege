@@ -15,7 +15,7 @@ def write_names_to_file(filename, names):
             for name in names:
                 file.write(name + '\n')
     except IOError:
-        print(f"Error: Coul not open file {filename}")
+        print(f"Error: Could not open file {filename}")
 
 
 def main():

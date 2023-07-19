@@ -23,7 +23,7 @@ def score_metrics(scores):
     highest_score = max(scores)
     lowest_score = min(scores)
     average_score = sum(scores) / len(scores)
-    print("\n\nNumber of Scores:", num_scores, "\n")
+    print("\n\n Number of Scores:", num_scores, "\n")
     print("High Score:", highest_score)
     print("Low Score:", lowest_score)
     print("Average Score:", average_score)
@@ -33,16 +33,16 @@ def mine_scores(scores):
     average_score = sum(scores) / len(scores)
     high_scores = [score for score in scores if score >= average_score]
     low_scores = [score for score in scores if score < average_score]
-    print("\n\nTop Scores")
+    print("\n\n Top Scores")
     for score in sorted(high_scores):
         print("{:.2f}".format(score))
-    print("\nBottom Scores")
+    print("\n Bottom Scores")
     for score in sorted(low_scores):
         print("{:.2f}".format(score))
 
 
 def update_score(scores):
-    print("\nUpdate Score:")
+    print("\n Update Score:")
     print("---------------")
     display_scores(scores)
 
@@ -61,7 +61,7 @@ def update_score(scores):
 
 
 def display_scores(scores):
-    print("\nScores in Reverse Order:")
+    print("\n Scores in Reverse Order:")
     print("--------------------------")
     reversed_scores = scores[::1]
 
@@ -88,7 +88,7 @@ def main():
             print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please try again.\n")
+            print("Invalid choice. Please try again. \n")
 
     display_menu()
 

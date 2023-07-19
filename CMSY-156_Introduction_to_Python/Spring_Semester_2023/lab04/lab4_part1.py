@@ -24,8 +24,7 @@ def main():
 
     # Take pizza orders
     while True:
-        print("What would you like to order today?")
-        print()  # Print a blank line.
+        print("What would you like to order today? \n")
         print("1. Cheese Pizza")
         print("2. Garden Fresh Pizza")
         print("3. Meat Lovers Pizza")

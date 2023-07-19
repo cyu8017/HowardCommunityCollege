@@ -26,19 +26,19 @@ def main():
         total_cost = num_of_ice_cream_scoops * discounted_price_per_scoop
 
     if num_of_ice_cream_scoops == 1:
-        print(f"\nThe price per scoop is: ${regular_price_per_scoop:.2f}")
+        print(f"\n The price per scoop is: ${regular_price_per_scoop:.2f}")
         print(f"You ordered {num_of_ice_cream_scoops} scoop")
         print(f"Your total cost is: ${total_cost:.2f}")
         print("Thank you for using the program")
 
     elif num_of_ice_cream_scoops == 2:
-        print(f"\nThe price per scoop is: ${regular_price_per_scoop:.2f}")
+        print(f"\n The price per scoop is: ${regular_price_per_scoop:.2f}")
         print(f"You ordered {num_of_ice_cream_scoops} scoops")
         print(f"Your total cost is: ${total_cost:.2f}")
         print("Thank you for using the program")
 
     elif num_of_ice_cream_scoops >= 3:
-        print(f"\nThe price per scoop is: ${discounted_price_per_scoop:.2f}")
+        print(f"\n The price per scoop is: ${discounted_price_per_scoop:.2f}")
         print(f"You ordered {num_of_ice_cream_scoops} scoops")
         print(f"Your total cost is: ${total_cost:.2f}")
         print("Thank you for using the program")

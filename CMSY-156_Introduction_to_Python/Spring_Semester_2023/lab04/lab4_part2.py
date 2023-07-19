@@ -1,5 +1,6 @@
 def main():
     valid_temperature = False
+    start_temperature = 0
 
     while not valid_temperature:
         start_temperature = float(input("Enter the starting temperature: "))
@@ -7,7 +8,7 @@ def main():
         if start_temperature >= -273.15:
             valid_temperature = True
         else:
-            print("Error: Temperatures cannot be below absolute zero (-273.15°C). Please re-enter!\n")
+            print("Error: Temperatures cannot be below absolute zero (-273.15°C). Please re-enter! \n")
 
     # Part 2: Displaying table using a while loop
     print("\nTemperature conversions using a while loop\n")
@@ -22,7 +23,7 @@ def main():
         iteration += 1
 
     # Part 3: Displaying table using a for loop
-    print("\nTemperature conversions using a for loop\n")
+    print("\n Temperature conversions using a for loop \n")
     print(f"{'Cels': >10}{'Fahr': >12}{'Kelvin': >10}")
 
     for iteration in range(31):

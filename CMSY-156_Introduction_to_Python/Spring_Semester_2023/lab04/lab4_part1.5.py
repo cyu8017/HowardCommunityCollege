@@ -1,4 +1,6 @@
 def main():
+    total_games = 0
+    total_goals = 0
     print("Welcome to the CMSY-156 Soccer Calculator \n")
 
     while True:
@@ -12,6 +14,7 @@ def main():
                 print("Error: the number of shots taken cannot be negative i.e <0, please reenter.")
 
         total_games = int(total_games)
+        total_shots = 0  # Initialize total_shots outside the if-else block.
 
         if total_games == 0:
             average_goals_per_game = 0.0

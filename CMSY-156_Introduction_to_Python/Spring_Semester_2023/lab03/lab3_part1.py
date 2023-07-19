@@ -5,6 +5,7 @@ def main():
         2: 18.49,  # Garden Fresh Pizza
         3: 19.75   # Meat Lovers Pizza
     }
+
     sales_tax_rate = 0.06
     delivery_charge = 5.00
 

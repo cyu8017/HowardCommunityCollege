@@ -1,3 +1,6 @@
+delivery_address = ""
+
+
 def display_menu():
     print("What would you like to order today? \n")
     print("1. Cheese Pizza")

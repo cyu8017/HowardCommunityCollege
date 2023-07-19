@@ -1,6 +1,7 @@
 def to_fahr(celsius_temperature):
-    ftemp = (9 / 5) * celsius_temperature + 32
-    return ftemp
+    # ftemp = (9 / 5) * celsius_temperature + 32
+    # return ftemp
+    return (9/5) * celsius_temperature + 32
 
 
 def to_cels(ftemp):

@@ -25,6 +25,7 @@ def main():
         print(f"The average shots per goal is: {average_shots_per_goal:.2f} \n")
 
         user_input = input("Do you want to continue? (yes/no): ")
+
         if user_input.lower() == "no":
             break
 
