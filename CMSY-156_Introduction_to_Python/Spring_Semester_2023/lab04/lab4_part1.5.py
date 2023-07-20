@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     total_games = 0
     total_goals = 0
     print("Welcome to the CMSY-156 Soccer Calculator \n")

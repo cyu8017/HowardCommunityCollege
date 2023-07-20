@@ -20,8 +20,7 @@ def display_menu():
 def main():
     # Print menu, then prompt user for an input.
     display_menu()
-    choice = input('Enter your choice: ')
-    print()  # Print blank line
+    choice = input('Enter your choice:  \n')
 
     # This while loop will always re-run the application until the user quits.
     while choice != 3:
@@ -50,7 +49,7 @@ def main():
 
         # If the user does not select choice 3, keep printing the menu.
         # Then prompt the user for an input.
-        print()  # Print blank line
+        print('\n')  # Print blank line
         display_menu()
         choice = input('Enter your choice: ')
 

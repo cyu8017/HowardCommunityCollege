@@ -19,6 +19,10 @@ def write_names_to_file(filename, names):
 
 
 def main():
+    """
+    Main function
+    """
+
     female_names_list = read_names_from_file("FemaleNames.txt")
     male_names_list = read_names_from_file("MaleNames.txt")
     combined_names_list = female_names_list + male_names_list

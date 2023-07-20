@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Define cost for pizza, tax, and delivery charge.
     pizza_prices = {
         1: 17.10,  # Cheese Pizza

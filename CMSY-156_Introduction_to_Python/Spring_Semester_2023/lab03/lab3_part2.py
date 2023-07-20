@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     regular_price_per_scoop = 2.75
     discounted_price_per_scoop = 2.10
     waffle_cone_price = 1.55

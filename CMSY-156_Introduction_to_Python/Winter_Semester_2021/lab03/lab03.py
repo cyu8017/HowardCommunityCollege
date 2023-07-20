@@ -12,18 +12,18 @@ def main():
     # Print the numOfScoops entry to be a whole number with 0 decimal places.
     # Print results with pricing to include 2 decimal places.
     if (numOfScoops > 0) and (numOfScoops < 3):
-        print('\nThe price per scoop is $', f'{pricePerScoop:.2f}')
-        print('You ordered', f'{numOfScoops:.0f}', "scoop.")
-        print('Your total cost is $', f'{(numOfScoops * pricePerScoop):.2f}', '.')
+        print(f"\n The price per scoop is ${pricePerScoop:.2f}")
+        print(f"You ordered {numOfScoops:.0f} scoops.")
+        print(f"Your total cost is {(numOfScoops * pricePerScoop):.2f} .")
 
     # This condition will check if the user enters any value greater than or equal to 3.
     # Apply discountedPricePerScoop into the cost.
     # Print the numOfScoops entry to be a whole number with 0 decimal places.
     # Print results with pricing to include 2 decimal places.
     elif numOfScoops >= 3:
-        print('\nThe price per scoop is $', f'{discountedPricePerScoop:.2f}')
-        print('You ordered', f'{numOfScoops:.0f}', "scoops.")
-        print('Your total cost is $', f'{(numOfScoops * discountedPricePerScoop):.2f}', '.')
+        print(f"\n The price per scoop is ${discountedPricePerScoop:.2f}.")
+        print(f"You ordered {numOfScoops:.0f} scoops.")
+        print(f"Your total cost is ${(numOfScoops * discountedPricePerScoop):.2f}.")
 
     # This condition will check the user enters 0 or a number that is negative.
     # Print the numOfScoops entry to be a whole number with 0 decimal places.

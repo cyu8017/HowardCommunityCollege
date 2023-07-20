@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     print("Welcome to the CMSY-156 Soccer Calculator")
 
     while True:

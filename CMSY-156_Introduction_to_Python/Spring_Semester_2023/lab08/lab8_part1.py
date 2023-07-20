@@ -25,6 +25,10 @@ def convert_to_numeric(number):
 
 
 def main():
+    """
+    Main function
+    """
+
     telephone_number_entry = input("Enter a phone number to be translated: ")
     numeric_telephone_number = convert_to_numeric(telephone_number_entry)
     print(numeric_telephone_number)

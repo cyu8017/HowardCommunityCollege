@@ -8,6 +8,10 @@ def get_currency_exchange(country):
 
 
 def main():
+    """
+    Main function
+    """
+
     country_name = input("Enter the name of a country: ")
     currency, exchange_rate = get_currency_exchange(country_name)
 

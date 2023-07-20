@@ -32,6 +32,10 @@ def get_tip_amount():
 
 
 def main():
+    """
+    Main function
+    """
+
     global delivery_address
     print("Welcome to the CMSY-156 Pizza Shop\n")
     while True:

@@ -8,6 +8,10 @@ def validate_input(item):
 
 
 def main():
+    """
+    Main function
+    """
+
     print("Welcome to the CMSY-156 Soccer Calculator\n")
 
     while True:

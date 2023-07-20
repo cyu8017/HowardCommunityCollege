@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     valid_temperature = False
     start_temperature = 0
 

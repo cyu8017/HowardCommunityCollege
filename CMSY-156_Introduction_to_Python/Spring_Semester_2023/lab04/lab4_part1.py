@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Display the title of the program
     print("Welcome to the CMSY-169 Pizza Shop!")
 

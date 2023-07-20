@@ -17,6 +17,10 @@ def display_menu():
 
 
 def main():
+    """
+    Main function
+    """
+
     display_menu()
 
     while True:

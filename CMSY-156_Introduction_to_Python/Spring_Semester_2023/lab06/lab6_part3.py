@@ -22,6 +22,10 @@ def convert_currency(amount, from_currency, to_currency):
 
 
 def main():
+    """
+    Main function
+    """
+
     try:
         # Get user input for the two country names and amount of money
         from_country = input("Enter the name of the country to convert from: ")
@@ -36,8 +40,10 @@ def main():
             print(f"{amount} {from_currency} from {from_country} is equivalent to {converted_amount:.2f} {to_currency} from {to_country}.")
         else:
             print(f"Conversion failed.")
+
     except ValueError:
         print("Invalid input. Please enter a valid amount.")
+
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 

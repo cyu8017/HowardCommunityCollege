@@ -1,4 +1,17 @@
 def get_countries_by_exchange_rate():
+    """
+    Get a list of countries sorted by their exchange rates.
+
+    This function reads data from the 'Exchange.txt' file, which contains information about countries and their
+    exchange rates. It then creates a list of tuples, where each tuple contains the country and the country name and its
+    corresponding exchange rate.
+
+    The list is sorted on the exchange rates in ascending order.
+
+    :return:
+        list: A sorted list of typles, where each typle contains the country and its exchange rate.
+    """
+
     countries = []
     with open('Exchrate.txt', 'r') as file:
         for line in file:
@@ -9,6 +22,10 @@ def get_countries_by_exchange_rate():
 
 
 def main():
+    """
+    Main function
+    """
+
     # Get the countries sorted by exchange rate in ascending order
     sorted_countries = get_countries_by_exchange_rate()
 

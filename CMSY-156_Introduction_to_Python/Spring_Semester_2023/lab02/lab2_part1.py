@@ -43,7 +43,7 @@ def display_game_results(goals_per_game, shots_per_game, shots_per_goal):
 
 def main():
     """
-    Main function to process IP addresses from an input file and generate a report.
+    Main function
     """
 
     print("CMSY-156 Soccer Calculator \n")

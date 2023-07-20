@@ -27,6 +27,10 @@ def get_course_data():
 
 
 def main():
+    """
+    Main function
+    """
+
     room_numbers, instructors, meeting_times = get_course_data()
 
     print("Courses: CS101 CS102 CS103 NT110 CM241\n")
