@@ -1,4 +1,13 @@
 def validate_input(item):
+    """
+    Validate user input for a non-negative integer value.
+
+    :param item:
+        (str): A description of the item for which the  user is providing the input.
+
+    :return:
+        (int): A non-negative integer value provided by the user.
+    """
     while True:
         value = input(f"Enter the number of {item}: ")
         if value.isdigit() and int(value) >= 0:
