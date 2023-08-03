@@ -2,6 +2,12 @@ delivery_address = ""
 
 
 def display_menu():
+    """
+    Displays the menu options for the pizza shop and asks the user to enter their choice.
+
+    :return:
+        (int): The user's choice as an integer representing the selected menu option.
+    """
     print("What would you like to order today? \n")
     print("1. Cheese Pizza")
     print("2. Garden Fresh Pizza")
@@ -16,10 +22,20 @@ def display_menu():
 
 
 def display_error_message():
+    """
+    Displays an error message for invalid user input.
+    :return:
+    """
     print("Error: Please enter a valid value. Please try again! \n")
 
 
 def get_tip_amount():
+    """
+    Asks the user to enter the tip amount and validates if it's a non-negative float.
+
+    :return:
+        (float): The tip amount entered by the user.
+    """
     while True:
         try:
             tip = float(input("Please enter the amount of the tip: $"))
