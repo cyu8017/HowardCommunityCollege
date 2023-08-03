@@ -9,6 +9,7 @@ def get_currency_exchange(country):
         (tuple): A tuple containing the currency code (str) and the exchange rate (float) for the given country.
             If the country is not found in the file, it returns (None, None).
     """
+
     with open('Exchrate.txt', 'r') as file:
         for line in file:
             data = line.strip().split(',')
@@ -34,6 +35,7 @@ def convert_currency(amount, from_currency, to_currency):
         (tuple): A tuple containing the converted amount (float), the source currency name (str),
             and the target
     """
+
     from_currency_name, from_exchange_rate = get_currency_exchange(from_currency)
     to_currency_name, to_exchange_rate = get_currency_exchange(to_currency)
 

@@ -9,6 +9,7 @@ def read_names_from_file(filename):
         (list) A list of names read from the file. If there's an error during the file reading,,
             an empty list will be returned.
     """
+
     names = []
     try:
         with open(filename, 'r') as file:
@@ -31,6 +32,7 @@ def write_names_to_file(filename, names):
 
     :return: None
     """
+
     try:
         with open(filename, 'w') as file:
             for name in names:

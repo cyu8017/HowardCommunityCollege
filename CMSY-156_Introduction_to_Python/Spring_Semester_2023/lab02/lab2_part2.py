@@ -78,6 +78,7 @@ def print_receipt(make_model, phone_cost, warranty_cost):
     :return:
         None
     """
+
     sales_tax = calculate_sales_tax(phone_cost + warranty_cost)
     shipping_cost = calculate_shipping_cost(phone_cost)
     total_amount_due = calculate_total_amount(phone_cost, warranty_cost)

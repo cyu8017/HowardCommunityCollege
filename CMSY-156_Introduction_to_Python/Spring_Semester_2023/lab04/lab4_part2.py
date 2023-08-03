@@ -3,40 +3,73 @@ def main():
     Main function
     """
 
-    valid_temperature = False
-    start_temperature = 0
+    total_games = 0
+    total_goals = 0
+    print("Welcome to the CMSY-156 Soccer Calculator \n")
 
-    while not valid_temperature:
-        start_temperature = float(input("Enter the starting temperature: "))
+    while True:
+        # Input validation for total games
+        valid_total_games = False
+        while not valid_total_games:
+            total_games = input("Please enter the number of games: ")
+            if total_games.isdigit() and int(total_games) >= 0:
+                valid_total_games = True
+            else:
+                print("Error: the number of shots taken cannot be negative i.e <0, please reenter.")
 
-        if start_temperature >= -273.15:
-            valid_temperature = True
+        total_games = int(total_games)
+        total_shots = 0  # Initialize total_shots outside the if-else block.
+
+        if total_games == 0:
+            average_goals_per_game = 0.0
+            average_shots_per_game = 0.0
+            average_shots_per_goal = 0.0
         else:
-            print("Error: Temperatures cannot be below absolute zero (-273.15°C). Please re-enter! \n")
+            # Input validation for total shots
+            valid_total_shots = False
+            while not valid_total_shots:
+                total_shots = input("Please enter the number of shots taken: ")
+                if total_shots.isdigit() and int(total_shots) >= 0:
+                    valid_total_shots = True
+                else:
+                    print("Error: the number of shots taken cannot be negative i.e. <0 please reenter.")
 
-    # Part 2: Displaying table using a while loop
-    print("\nTemperature conversions using a while loop\n")
-    print(f"{'Cels': >10}{'Fahr': >12}{'Kelvin': >10}")
-    iteration = 0
+            total_shots = int(total_shots)
 
-    while iteration <= 30:
-        celsius_temperature_entry = start_temperature + iteration
-        fahrenheit_temp = (9/5) * celsius_temperature_entry + 32
-        kelvin_temp = celsius_temperature_entry + 273.15
-        print(f"{celsius_temperature_entry: >10.2f}{fahrenheit_temp: >12.2f}{kelvin_temp: >10.2f}")
-        iteration += 1
+            # Input validation for total goals
+            valid_total_goals = False
+            while not valid_total_goals:
+                total_goals = input("Please enter the number of goals scored: ")
+                if total_goals.isdigit() and int(total_goals) >= 0:
+                    valid_total_goals = True
+                else:
+                    print("Error: the number of goals scored cannot be negative i.e < 0, please reenter.")
 
-    # Part 3: Displaying table using a for loop
-    print("\n Temperature conversions using a for loop \n")
-    print(f"{'Cels': >10}{'Fahr': >12}{'Kelvin': >10}")
+            total_goals = int(total_goals)
 
-    for iteration in range(31):
-        celsius_temperature_entry = start_temperature + iteration
-        fahrenheit_temp = (9/5) * celsius_temperature_entry + 32
-        kelvin_temp = celsius_temperature_entry + 273.15
-        print(f"{celsius_temperature_entry: >10.2f}{fahrenheit_temp: >12.2f}{kelvin_temp: >10.2f}")
+            if total_goals == 0:
+                average_shots_per_goal = 0.0
+            else:
+                average_shots_per_goal = total_shots / total_goals
 
-    print("\nThank you for using this program")
+            average_goals_per_game = total_goals / total_games
+            average_shots_per_game = total_shots / total_games
+
+        print(f"\n The average goals per game is: {average_goals_per_game:.2f}")
+        print(f"The average shots on goal per game is: {average_shots_per_game:.2f}")
+        print(f"The average shots per goal is: {average_shots_per_goal:.2f} \n")
+
+        # Ask for repeat entry
+        user_input = input("Do you want to continue? (y/n): ")
+
+        while user_input.lower() not in ["y", "n"]:
+            print("Error: Invalid input. Please enter 'y' or 'n'.")
+            user_input = input("Do you want to continue? (y/n): ")
+
+        if user_input.lower() == "n":
+            break
+
+    print("Thank you for using this program!")
 
 
 if __name__ == '__main__':

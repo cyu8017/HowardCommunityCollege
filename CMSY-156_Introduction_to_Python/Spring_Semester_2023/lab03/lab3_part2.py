@@ -3,49 +3,37 @@ def main():
     Main function
     """
 
-    regular_price_per_scoop = 2.75
-    discounted_price_per_scoop = 2.10
-    waffle_cone_price = 1.55
+    print("Welcome to the CMSY-156 Soccer Calculator")
 
-    print("How many scoops would you like?")
-    num_of_ice_cream_scoops = int(input("Enter the number of scoops (minimum 1): "))
+    while True:
+        total_games = int(input("\nEnter the total number of games: "))
 
-    if num_of_ice_cream_scoops <= 0:
-        print(f"You asked for {num_of_ice_cream_scoops} scoops. You must order one or more scoops.")
-        exit()
+        if total_games == 0:
+            average_goals_per_game = 0.0
+            average_shots_per_game = 0.0
+            average_shots_per_goal = 0.0
+        else:
+            total_shots = int(input("Enter the total number of shots taken: "))
+            total_goals = int(input("Enter the total number of goals scored: "))
 
-    waffle_cone = input("Would you like a waffle cone? (y/n): ").lower()
+            if total_goals == 0:
+                average_shots_per_goal = 0.0
+            else:
+                average_shots_per_goal = total_shots / total_goals
 
-    if num_of_ice_cream_scoops <= 2 and waffle_cone == 'n':
-        total_cost = num_of_ice_cream_scoops * regular_price_per_scoop
-    elif num_of_ice_cream_scoops <= 2 and waffle_cone == 'y':
-        print(f"The price of a waffle cone is ${waffle_cone_price:.2f}")
-        total_cost = num_of_ice_cream_scoops * regular_price_per_scoop + waffle_cone_price
-    elif num_of_ice_cream_scoops >= 2 and waffle_cone == 'n':
-        total_cost = num_of_ice_cream_scoops * discounted_price_per_scoop
-    elif num_of_ice_cream_scoops >= 2 and waffle_cone == 'y':
-        print(f"The price of a waffle cone is ${waffle_cone_price:.2f}")
-        total_cost = num_of_ice_cream_scoops * discounted_price_per_scoop + waffle_cone_price
-    else:
-        total_cost = num_of_ice_cream_scoops * discounted_price_per_scoop
+            average_goals_per_game = total_goals / total_games
+            average_shots_per_game = total_shots / total_games
 
-    if num_of_ice_cream_scoops == 1:
-        print(f"\n The price per scoop is: ${regular_price_per_scoop:.2f}")
-        print(f"You ordered {num_of_ice_cream_scoops} scoop")
-        print(f"Your total cost is: ${total_cost:.2f}")
-        print("Thank you for using the program")
+        print(f"\nThe average goals per game is: {average_goals_per_game:.2f}")
+        print(f"The average shots on goal per game is: {average_shots_per_game:.2f}")
+        print(f"The average shots per goal is: {average_shots_per_goal:.2f} \n")
 
-    elif num_of_ice_cream_scoops == 2:
-        print(f"\n The price per scoop is: ${regular_price_per_scoop:.2f}")
-        print(f"You ordered {num_of_ice_cream_scoops} scoops")
-        print(f"Your total cost is: ${total_cost:.2f}")
-        print("Thank you for using the program")
+        user_input = input("Do you want to continue? (yes/no): ")
 
-    elif num_of_ice_cream_scoops >= 3:
-        print(f"\n The price per scoop is: ${discounted_price_per_scoop:.2f}")
-        print(f"You ordered {num_of_ice_cream_scoops} scoops")
-        print(f"Your total cost is: ${total_cost:.2f}")
-        print("Thank you for using the program")
+        if user_input.lower() == "no":
+            break
+
+    print("Thank you for using this program!")
 
 
 if __name__ == '__main__':

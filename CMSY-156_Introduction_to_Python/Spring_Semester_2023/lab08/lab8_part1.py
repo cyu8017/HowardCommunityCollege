@@ -1,8 +1,25 @@
 def convert_to_numeric(number):
+    """
+    Converts an input string to its numeric representation based on a phone keypad.
+
+    :param number:
+        (str): The input string to be converted.
+
+    :return:
+        (str): The numeric representation of the input string.
+    """
+
+    # Initialize an empty string to store the numeric representation.
     numeric_number = ''
+
+    # Iterate through each character in the input string.
     for char in number:
+        # Check if the character is an alphabetic letter.
         if char.isalpha():
+            # Convert the character to uppercase to handle both upper and lowercase letters.
             char = char.upper()
+
+            # Map the character to its corresponding numeric representation.
             if 'A' <= char <= 'C':
                 numeric_number += '2'
             elif 'D' <= char <= 'F':
@@ -20,7 +37,10 @@ def convert_to_numeric(number):
             elif 'W' <= char <= 'Z':
                 numeric_number += '9'
         else:
+            # If the character is not an alphabetic letter, keep it as is.
             numeric_number += char
+
+    # Return the final numeric representation of the input string.
     return numeric_number
 
 
