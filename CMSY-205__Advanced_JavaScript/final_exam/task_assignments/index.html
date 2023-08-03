@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Task Management</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- jQuery UI Smoothness Library CSS -->
+    <link rel="stylesheet" type="text/css" href="smoothness/jquery-ui-1.8.23.custom.css">
+
+</head>
+
+<body>
+
+    <!-- Start Section -->
+    <section>
+
+        <!-- Page Title -->
+        <h1>Task List by Employee</h1>
+
+        <!-- Start Left Div -->
+        <div id="left">
+
+            <!-- Title Div -->
+            <h3>Kelly</h3>
+
+            <!-- Start Employee 1 Div -->
+            <div id="employee1">
+                <div class="ui-state-default">
+                    <p>Manage office personnel</p>
+                </div>
+                <div class="ui-state-default">
+                    <p>Process payables</p>
+                </div>
+                <div class="ui-state-default">
+                    <p>Process payroll</p>
+                </div>
+            </div>
+            <!-- End Employee 1 Div -->
+
+            <!-- Add Task Button -->
+            <input type="button" id="add1" value="Add Task">
+
+        </div>
+        <!-- End Left Div -->
+
+        <!-- End Right Div -->
+        <div id="right">
+
+            <!-- Title Div -->
+            <h3>Estelle</h3>
+
+            <!-- Start Employee 2 Div -->
+            <div id="employee2" class="connectedSortable">
+                <div class="ui-state-default">
+                    <p>Enter orders</p>
+                </div>
+                <div class="ui-state-default">
+                    <p>Process invoices</p>
+                </div>
+            </div>
+            <!-- End Employee 2 Div -->
+
+            <!-- Add Task Button -->
+            <input type="button" id="add2" value="Add Task">
+
+        </div>
+        <!-- End Right Div -->
+
+    </section>
+    <!-- End Section -->
+
+    <!-- jQuery 1.8.3 -->
+    <script src="js/jquery183.is"></script>
+
+    <!-- jQuery UI Smoothness Library JavaScript -->
+    <script src="smoothness/jquery-ui-1.8.23.custom.min.js"></script>
+
+    <!-- App JS -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

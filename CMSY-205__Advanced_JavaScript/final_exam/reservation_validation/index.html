@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Reservation request</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Page Title -->
+    <h1>Reservation Request</h1>
+
+    <!-- Start Reservation Form -->
+    <form action="response.html" method="get" name="reservation_form" id="reservation_form">
+
+        <!-- Start General Information Fieldset -->
+        <fieldset>
+
+            <!-- Start Fieldset Title -->
+            <legend>General Information</legend>
+
+            <!-- Start Arrival Date Input -->
+            <label for="arrival_date">Arrival date:</label>
+            <input type="text" name="arrival_date" id="arrival_date" autofocus>
+            <br>
+            <!-- End Arrival Date Input -->
+
+            <!-- Start Number of Nights Input -->
+            <label for="nights">Nights:</label>
+            <input type="text" name="nights" id="nights">
+            <br>
+            <!-- End Number of Nights Input -->
+
+            <!-- Start Number of Adults Dropdown Select -->
+            <label>Adults:</label>
+            <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            <!-- End Number of Adults Dropdown Select -->
+
+            <!-- Start Number of Children Dropdown Select -->
+            <label>Children:</label>
+            <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            <!-- End Number of Children Dropdown Select -->
+
+        </fieldset>
+        <!-- End General Information Fieldset -->
+
+        <!-- Start Preferences Fieldset -->
+        <fieldset>
+            <!-- Fieldset Title -->
+            <legend>Preferences</legend>
+
+            <!-- Room Type Radio Button -->
+            <label>Room type:</label>
+            <input type="radio" name="room" id="standard" class="left" checked>Standard&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="room" id="business" class="left">Business&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="room" id="suite" class="left last">Suite<br>
+
+            <!-- Bed Type Radio Button -->
+            <label>Bed type:</label>
+            <input type="radio" name="bed" id="king" class="left" checked>King&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="bed" id="double" class="left last">Double Double<br>
+            <input type="checkbox" name="smoking" id="smoking">Smoking<br>
+        </fieldset>
+        <!-- End Preferences Fieldset -->
+
+        <!-- Start Contact Information Fieldset -->
+        <fieldset>
+            <!-- Fieldset Title -->
+            <legend>Contact Information</legend>
+
+            <!-- Input for Name -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+
+            <!-- Input for Email -->
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <br>
+
+            <!-- Input for Phone -->
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" placeholder="999-999-9999"><br>
+            <br>
+        </fieldset>
+        <!-- End Contact Information Fieldset -->
+
+        <!-- Submit Request Button -->
+        <input type="submit" id="submit" value="Submit Request">
+        <br>
+
+    </form>
+    <!-- End Reservation Form -->
+
+    <!-- jQuery 1.8.3 -->
+    <script src="js/jquery183.js"></script>
+
+    <!-- jQuery Validation Library -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- App JS -->
+    <script src="js/additional-methods.min.js"></script>
+    <script src="js/reservation.js"></script>
+
+</body>
+
+</html>

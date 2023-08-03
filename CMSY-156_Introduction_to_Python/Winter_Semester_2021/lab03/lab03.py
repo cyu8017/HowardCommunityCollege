@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Declare pricing variables
     pricePerScoop = float(1.50)
     discountedPricePerScoop = float(1.25)

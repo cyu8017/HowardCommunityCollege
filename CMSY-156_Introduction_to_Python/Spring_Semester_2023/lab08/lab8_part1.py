@@ -34,5 +34,6 @@ def main():
     print(numeric_telephone_number)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
+    

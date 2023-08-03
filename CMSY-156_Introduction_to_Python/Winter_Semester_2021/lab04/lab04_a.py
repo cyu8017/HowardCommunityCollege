@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Print message to user
     print('Temperature conversions using a for loop. \n')
 

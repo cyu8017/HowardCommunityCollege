@@ -1,4 +1,14 @@
 def read_names_from_file(filename):
+    """
+    Reads names from a text file and returns them as a list of strings.
+
+    :param filename:
+        (str) The name of the file to read.
+
+    :return:
+        (list) A list of names read from the file. If there's an error during the file reading,,
+            an empty list will be returned.
+    """
     names = []
     try:
         with open(filename, 'r') as file:
@@ -10,6 +20,17 @@ def read_names_from_file(filename):
 
 
 def write_names_to_file(filename, names):
+    """
+    Writes a list of names to a text file.
+
+    :param filename:
+        (str) The name of the file to write to.
+
+    :param names:
+        (list) A list of names to be written to the file.
+
+    :return: None
+    """
     try:
         with open(filename, 'w') as file:
             for name in names:

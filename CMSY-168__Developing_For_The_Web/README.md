@@ -1,0 +1,3 @@
+# CMSY 168 Developing For the Web - Final Project.
+
+This course presents in-depth coverage of HTML and cascading style sheets (CSS). Students will learn the core technologies of front-end development - HTML, CSS, and document object model (DOM). The course also reviews recommended practices for creating accessible websites, semantic markup, and emerging technologies. A conceptual overview, design issues, and practical development issues are interwoven. Familiarity and experience with the Windows operating system, the creation of folders (directories) and files, and the World Wide Web is assumed.

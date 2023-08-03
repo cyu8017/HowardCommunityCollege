@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Prompt the user for Fahrenheit temperature entry.
     # Take in the entry as a float.
     fahrenheitEntry = float(input("Enter the Fahrenheit temperature: "))

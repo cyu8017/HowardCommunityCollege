@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Prompt the user for a Celsius temperature entry.
     # Take the entry as a float.
     celsiusEntry = float(input("Enter the Celsius temperature: "))

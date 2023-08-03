@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     print("Programmer name: Klem N. Tine (use your own name)")
     print("My second Python program")
     print("Lab 1 Part B: Using the Python math operators")
