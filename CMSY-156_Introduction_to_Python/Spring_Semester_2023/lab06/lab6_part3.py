@@ -1,4 +1,14 @@
 def get_currency_exchange(country):
+    """
+    Retrieves the currency exchange rate for a specific country from a file.
+
+    :param country:
+        (str) The name of the country for which the exchange rate is needed.
+
+    :return:
+        (tuple): A tuple containing the currency code (str) and the exchange rate (float) for the given country.
+            If the country is not found in the file, it returns (None, None).
+    """
     with open('Exchrate.txt', 'r') as file:
         for line in file:
             data = line.strip().split(',')
@@ -8,6 +18,22 @@ def get_currency_exchange(country):
 
 
 def convert_currency(amount, from_currency, to_currency):
+    """
+    Converts an amount from one currency to another based on exchange rates.
+
+    :param amount:
+        (float): The amount to be converted.
+
+    :param from_currency:
+        (str): The currency code of the source currency.
+
+    :param to_currency:
+        (str): The currency code of the target currency.
+
+    :return:
+        (tuple): A tuple containing the converted amount (float), the source currency name (str),
+            and the target
+    """
     from_currency_name, from_exchange_rate = get_currency_exchange(from_currency)
     to_currency_name, to_exchange_rate = get_currency_exchange(to_currency)
 
