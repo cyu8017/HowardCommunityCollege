@@ -1,4 +1,15 @@
 def get_course_data():
+    """
+    Retrieves data related to various courses.
+
+    :return:
+        tuple: A tuple containing three dictionaries:
+            - room_numbers: a dictionary mapping course codes to their respective room numbers.
+            - instructors: a dictionary mapping course codes to their respective instructors' names.
+            - meeting_times: a dictionary mapping course codes to their respective meeting times.
+    """
+
+    # Create a dictionary mapping course codes to room numbers.
     room_numbers = {
         "CS101": "3004",
         "CS102": "4501",
@@ -7,6 +18,7 @@ def get_course_data():
         "CM241": "1411"
     }
 
+    # Create a dictionary mapping course codes to instructors' names.
     instructors = {
         "CS101": "Haynes",
         "CS102": "Alvarado",
@@ -15,6 +27,7 @@ def get_course_data():
         "CM241": "Lee"
     }
 
+    # Create a dictionary mapping course codes to meeting times.
     meeting_times = {
         "CS101": "8:00am",
         "CS102": "9:00am",
@@ -23,6 +36,7 @@ def get_course_data():
         "CM241": "11:00pm"
     }
 
+    # Return the three dictionaries as a tuple.
     return room_numbers, instructors, meeting_times
 
 
