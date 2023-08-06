@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     try:
         with open("nameslist1.txt", "r") as namelist1, \
              open("nameslist2.txt", "r") as namelist2, \

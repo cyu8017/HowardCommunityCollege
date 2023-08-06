@@ -2,22 +2,52 @@ import sys
 
 
 def to_fahr(ctemp):
+    """
+    Convert a temperature from Celsius to Fahrenheit.
+
+    :param ctemp:
+        (float): The temperature in Celsius.
+
+    :return:
+        (float): The equivalent temperature in Fahrenheit.
+    """
+
     return (9 / 5) * ctemp + 32
 
 
 def to_cels(ftemp):
+    """
+    Convert a temperature from Fahrenheit to Celsius.
+
+    :param ftemp:
+        (float): The temperature in Fahrenheit.
+
+    :return:
+        (float): The equivalent temperature in Celsius.
+    """
+
     return (ftemp - 32) * 5 / 9
 
 
 def display_menu():
-    print('Temperature Conversions')
-    print()
-    print('1) Celsius to Fahrenheit')
-    print('2) Fahrenheit to Celsius')
-    print('3) Quit')
+    """
+    Display a menu of temperature conversion options for the user to choose from.
+
+    :return:
+        None: The function only prints the menu options to the console.
+    """
+
+    print("Temperature Conversions \n")
+    print("1) Celsius to Fahrenheit")
+    print("2) Fahrenheit to Celsius")
+    print("3) Quit")
 
 
 def main():
+    """
+    Main function
+    """
+
     # Print menu, then prompt user for an input.
     display_menu()
     choice = input('Enter your choice:  \n')

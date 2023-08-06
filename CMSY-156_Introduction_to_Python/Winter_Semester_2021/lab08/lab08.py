@@ -1,4 +1,8 @@
 def main():
+    """
+    Main function
+    """
+
     # Dictionary to define room numbers for each course.
     course_room_number = {
         'CS101': '3004',
